@@ -980,11 +980,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repo\\exercises\\StoreMangerApp\\StoreManger\\StoreManger.csproj",
+      "projectUniqueName": "C:\\repo\\store\\store-manager\\StoreMangerApp\\StoreManger\\StoreManger.csproj",
       "projectName": "StoreManger",
-      "projectPath": "C:\\repo\\exercises\\StoreMangerApp\\StoreManger\\StoreManger.csproj",
+      "projectPath": "C:\\repo\\store\\store-manager\\StoreMangerApp\\StoreManger\\StoreManger.csproj",
       "packagesPath": "C:\\Users\\Carla Lawrence\\.nuget\\packages\\",
-      "outputPath": "C:\\repo\\exercises\\StoreMangerApp\\StoreManger\\obj\\",
+      "outputPath": "C:\\repo\\store\\store-manager\\StoreMangerApp\\StoreManger\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Carla Lawrence\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1001,8 +1001,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.ApplicationService\\StoreManager.ApplicationService.csproj": {
-              "projectPath": "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.ApplicationService\\StoreManager.ApplicationService.csproj"
+            "C:\\repo\\store\\store-manager\\StoreMangerApp\\StoreManager.ApplicationService\\StoreManager.ApplicationService.csproj": {
+              "projectPath": "C:\\repo\\store\\store-manager\\StoreMangerApp\\StoreManager.ApplicationService\\StoreManager.ApplicationService.csproj"
             }
           }
         }

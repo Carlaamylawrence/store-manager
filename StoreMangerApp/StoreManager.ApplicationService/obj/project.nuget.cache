@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fXgUEkDkVagw8TEpHensLPHcjY+Z5OyYrE4yXIoHlFcJxtKQvBJOPXa1HF4VD4yFSMgoRmh/68sz+KsbVsqg+w==",
+  "dgSpecHash": "PPy2J60zUdEgHKd5aNgH0xv6wXXpx+R5pkckqKlNm0Gy6r2LH3RibztBIrFApZzCI79Rkg4xFhgbs9tf7Ou/UA==",
   "success": true,
-  "projectFilePath": "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.ApplicationService\\StoreManager.ApplicationService.csproj",
+  "projectFilePath": "C:\\repo\\store\\store-manager\\StoreMangerApp\\StoreManager.ApplicationService\\StoreManager.ApplicationService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Carla Lawrence\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512"
   ],

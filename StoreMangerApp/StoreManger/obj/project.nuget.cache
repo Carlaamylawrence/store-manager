@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z6Lin6wvWgitiQ1o0iVVICTE/cjbUHNJPU8vC7DVa12B2x/+TQWl124+Zcp6rpJP2j+jn978bOTAx242YrcggA==",
+  "dgSpecHash": "TlwCn9O1/X0kwtq/H3lDlW8WT2CMdHnLW9cYbnwRigQH9Ap3Iqofu9pcteoWJSdAK2XXoYNb3M2/0piRQwkP4w==",
   "success": true,
-  "projectFilePath": "C:\\repo\\exercises\\StoreMangerApp\\StoreManger\\StoreManger.csproj",
+  "projectFilePath": "C:\\repo\\store\\store-manager\\StoreMangerApp\\StoreManger\\StoreManger.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Carla Lawrence\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\Carla Lawrence\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

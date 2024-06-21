@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZMtgosV6YXUd1KB9VVDqDJG/XI4vD9Wicih7C1cehmx4T/MsMunJCVu+2vsprBneQMM7Q+YBQcQquTOsGMullg==",
+  "dgSpecHash": "Xuk6Zx/EKeceRuKuLRRMC1+r6VbXu87XhKU7fSpRhgTDpnP/d5jduHuyY0CFSe809PrmIjJd11ZfGjJQZq2ICQ==",
   "success": true,
-  "projectFilePath": "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj",
+  "projectFilePath": "C:\\repo\\store\\store-manager\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
