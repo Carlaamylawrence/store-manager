@@ -1,0 +1,262 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\repo\\exercises\\StoreMangerApp\\StoreManger\\StoreManger.csproj": {}
+  },
+  "projects": {
+    "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.ApplicationService\\StoreManager.ApplicationService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.ApplicationService\\StoreManager.ApplicationService.csproj",
+        "projectName": "StoreManager.ApplicationService",
+        "projectPath": "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.ApplicationService\\StoreManager.ApplicationService.csproj",
+        "packagesPath": "C:\\Users\\Carla Lawrence\\.nuget\\packages\\",
+        "outputPath": "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.ApplicationService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Carla Lawrence\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj": {
+                "projectPath": "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj"
+              },
+              "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.Infrastructure\\StoreManager.Infrastructure.csproj": {
+                "projectPath": "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.Infrastructure\\StoreManager.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj",
+        "projectName": "StoreManager.Domain",
+        "projectPath": "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj",
+        "packagesPath": "C:\\Users\\Carla Lawrence\\.nuget\\packages\\",
+        "outputPath": "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Carla Lawrence\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.Infrastructure\\StoreManager.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.Infrastructure\\StoreManager.Infrastructure.csproj",
+        "projectName": "StoreManager.Infrastructure",
+        "projectPath": "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.Infrastructure\\StoreManager.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Carla Lawrence\\.nuget\\packages\\",
+        "outputPath": "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Carla Lawrence\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj": {
+                "projectPath": "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\repo\\exercises\\StoreMangerApp\\StoreManger\\StoreManger.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\repo\\exercises\\StoreMangerApp\\StoreManger\\StoreManger.csproj",
+        "projectName": "StoreManger",
+        "projectPath": "C:\\repo\\exercises\\StoreMangerApp\\StoreManger\\StoreManger.csproj",
+        "packagesPath": "C:\\Users\\Carla Lawrence\\.nuget\\packages\\",
+        "outputPath": "C:\\repo\\exercises\\StoreMangerApp\\StoreManger\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Carla Lawrence\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.ApplicationService\\StoreManager.ApplicationService.csproj": {
+                "projectPath": "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.ApplicationService\\StoreManager.ApplicationService.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

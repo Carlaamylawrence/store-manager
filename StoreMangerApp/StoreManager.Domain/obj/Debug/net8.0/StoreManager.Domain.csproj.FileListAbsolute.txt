@@ -1,0 +1,11 @@
+C:\repo\exercises\StoreMangerApp\StoreManager.Domain\bin\Debug\net8.0\StoreManager.Domain.deps.json
+C:\repo\exercises\StoreMangerApp\StoreManager.Domain\bin\Debug\net8.0\StoreManager.Domain.dll
+C:\repo\exercises\StoreMangerApp\StoreManager.Domain\bin\Debug\net8.0\StoreManager.Domain.pdb
+C:\repo\exercises\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\StoreManager.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\repo\exercises\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\StoreManager.Domain.AssemblyInfoInputs.cache
+C:\repo\exercises\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\StoreManager.Domain.AssemblyInfo.cs
+C:\repo\exercises\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\StoreManager.Domain.csproj.CoreCompileInputs.cache
+C:\repo\exercises\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\StoreManager.Domain.dll
+C:\repo\exercises\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\refint\StoreManager.Domain.dll
+C:\repo\exercises\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\StoreManager.Domain.pdb
+C:\repo\exercises\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\ref\StoreManager.Domain.dll

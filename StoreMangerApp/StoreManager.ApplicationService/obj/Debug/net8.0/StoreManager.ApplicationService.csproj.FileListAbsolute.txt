@@ -1,0 +1,17 @@
+C:\repo\exercises\StoreMangerApp\StoreManager.ApplicationService\bin\Debug\net8.0\StoreManager.ApplicationService.deps.json
+C:\repo\exercises\StoreMangerApp\StoreManager.ApplicationService\bin\Debug\net8.0\StoreManager.ApplicationService.dll
+C:\repo\exercises\StoreMangerApp\StoreManager.ApplicationService\bin\Debug\net8.0\StoreManager.ApplicationService.pdb
+C:\repo\exercises\StoreMangerApp\StoreManager.ApplicationService\bin\Debug\net8.0\StoreManager.Domain.dll
+C:\repo\exercises\StoreMangerApp\StoreManager.ApplicationService\bin\Debug\net8.0\StoreManager.Infrastructure.dll
+C:\repo\exercises\StoreMangerApp\StoreManager.ApplicationService\bin\Debug\net8.0\StoreManager.Domain.pdb
+C:\repo\exercises\StoreMangerApp\StoreManager.ApplicationService\bin\Debug\net8.0\StoreManager.Infrastructure.pdb
+C:\repo\exercises\StoreMangerApp\StoreManager.ApplicationService\obj\Debug\net8.0\StoreManager.ApplicationService.csproj.AssemblyReference.cache
+C:\repo\exercises\StoreMangerApp\StoreManager.ApplicationService\obj\Debug\net8.0\StoreManager.ApplicationService.GeneratedMSBuildEditorConfig.editorconfig
+C:\repo\exercises\StoreMangerApp\StoreManager.ApplicationService\obj\Debug\net8.0\StoreManager.ApplicationService.AssemblyInfoInputs.cache
+C:\repo\exercises\StoreMangerApp\StoreManager.ApplicationService\obj\Debug\net8.0\StoreManager.ApplicationService.AssemblyInfo.cs
+C:\repo\exercises\StoreMangerApp\StoreManager.ApplicationService\obj\Debug\net8.0\StoreManager.ApplicationService.csproj.CoreCompileInputs.cache
+C:\repo\exercises\StoreMangerApp\StoreManager.ApplicationService\obj\Debug\net8.0\StoreManager.ApplicationService.csproj.CopyComplete
+C:\repo\exercises\StoreMangerApp\StoreManager.ApplicationService\obj\Debug\net8.0\StoreManager.ApplicationService.dll
+C:\repo\exercises\StoreMangerApp\StoreManager.ApplicationService\obj\Debug\net8.0\refint\StoreManager.ApplicationService.dll
+C:\repo\exercises\StoreMangerApp\StoreManager.ApplicationService\obj\Debug\net8.0\StoreManager.ApplicationService.pdb
+C:\repo\exercises\StoreMangerApp\StoreManager.ApplicationService\obj\Debug\net8.0\ref\StoreManager.ApplicationService.dll

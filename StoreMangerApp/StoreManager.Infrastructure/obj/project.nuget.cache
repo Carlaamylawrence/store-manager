@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "wtPpubIbx8mCKWaljd4XdAKlKncmqLZVG6YgXp+TJkn8Ahvkq62IBiHv9KKEBGhiLBCrjrJinL9FnPK4vp+rZA==",
+  "success": true,
+  "projectFilePath": "C:\\repo\\exercises\\StoreMangerApp\\StoreManager.Infrastructure\\StoreManager.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Carla Lawrence\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512"
+  ],
+  "logs": []
+}
