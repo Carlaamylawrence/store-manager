@@ -19,7 +19,7 @@ export async function fetchProduct(id: number): Promise<void> {
   return await response.json();
 }
 
-export async function addProduct(product: Product): Promise<void> {
+export async function addProduct(product: Product): Promise<Product> {
   const response = await fetch(`${API_BASE_URL}/products`, {
     method: 'POST',
     headers: {
@@ -30,7 +30,7 @@ export async function addProduct(product: Product): Promise<void> {
   if (!response.ok) {
     throw new Error('Failed to add product');
   }
-  return response.json();
+  return product;
 }
 
 export async function updateProduct(product: Product): Promise<Product> {

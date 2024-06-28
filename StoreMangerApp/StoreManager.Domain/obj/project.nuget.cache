@@ -1,10 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "wyfKKrReSNVk0nJ3D8TdjvE7rjYiTdKgmgQgHBvGrOsI+RwWMUZXXfllo2BtKjwsGjQKGMMOqkJNkpC/ycPBXg==",
+  "dgSpecHash": "wbE9dfEdAI+TENhxugIZFEvhbGSmxiJX1ysY7n2WcrBGdQFgs8Nmhs9WPfz/qtJ35ykBJxGLpIt9uT4HANqkJA==",
   "success": true,
   "projectFilePath": "C:\\repo\\store\\store-manager\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Carla Lawrence\\.nuget\\packages\\serilog\\4.0.0\\serilog.4.0.0.nupkg.sha512"
+    "C:\\Users\\Carla Lawrence\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Carla Lawrence\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.0\\microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512",
+    "C:\\Users\\Carla Lawrence\\.nuget\\packages\\microsoft.extensions.dependencymodel\\8.0.0\\microsoft.extensions.dependencymodel.8.0.0.nupkg.sha512",
+    "C:\\Users\\Carla Lawrence\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\Carla Lawrence\\.nuget\\packages\\serilog\\4.0.0\\serilog.4.0.0.nupkg.sha512",
+    "C:\\Users\\Carla Lawrence\\.nuget\\packages\\serilog.settings.configuration\\8.0.1\\serilog.settings.configuration.8.0.1.nupkg.sha512",
+    "C:\\Users\\Carla Lawrence\\.nuget\\packages\\serilog.sinks.console\\6.0.0\\serilog.sinks.console.6.0.0.nupkg.sha512",
+    "C:\\Users\\Carla Lawrence\\.nuget\\packages\\serilog.sinks.file\\6.0.0\\serilog.sinks.file.6.0.0.nupkg.sha512",
+    "C:\\Users\\Carla Lawrence\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\Carla Lawrence\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

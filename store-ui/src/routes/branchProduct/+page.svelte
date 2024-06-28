@@ -8,6 +8,8 @@
   import type { Product } from '$lib/models/Product';
   import Nav from '../../components/navbar/nav.svelte';
   import '../../styles/modal.css';
+  import * as XLSX from 'xlsx';
+
 
   let branchProducts: BranchProduct[] = [];
   let branches: Branch[] = [];
@@ -67,6 +69,16 @@
     }
   }
 
+  function downloadToExcel() {
+    const ws = XLSX.utils.json_to_sheet(branchProducts.map(bp => ({
+      'Branch Name': bp.branchName,
+      'Product Name': bp.productName
+    })));
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, 'BranchProducts');
+    XLSX.writeFile(wb, 'BranchProducts.xlsx');
+  }
+
 </script>
 
 <Nav/>
@@ -74,6 +86,7 @@
 <div class="heading">
   <h1 class="page-title">Store Manager</h1>
   <button on:click={openAddModal} class="add">Assign Product to Branch</button>
+  <button on:click={downloadToExcel} class="download">Download to Excel</button>
 </div>
 
 <ul>
@@ -93,18 +106,18 @@
     <div class="modal-title">Assign Product to Branch</div>
     <div class="form-div">
       <div class="form-input">
-        <label for="branch">Branch:</label>
-        <select id="branch" bind:value={selectedBranchName} class="dropdown">
-          {#each branches as branch}
-            <option value={branch.name}>{branch.name}</option>
-          {/each}
-        </select>
-      </div>
-      <div class="form-input">
         <label for="product">Product:</label>
         <select id="product" bind:value={selectedProductName} class="dropdown">
           {#each products as product}
             <option value={product.name}>{product.name}</option>
+          {/each}
+        </select>
+      </div>
+      <div class="form-input">
+        <label for="branch">Branch:</label>
+        <select id="branch" bind:value={selectedBranchName} class="dropdown">
+          {#each branches as branch}
+            <option value={branch.name}>{branch.name}</option>
           {/each}
         </select>
       </div>

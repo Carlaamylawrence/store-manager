@@ -5,6 +5,7 @@
 	import Nav from '../../components/navbar/nav.svelte';
 	import { goto } from '$app/navigation';
 	import '../../styles/modal.css';
+	import * as XLSX from 'xlsx';
 
 	let products: Product[] = [];
 	let showModal = false;
@@ -39,6 +40,7 @@
 
 	async function handleSubmit() {
 		const { id, name, weightedItem, suggestedSellingPrice } = productInModal;
+		
 		let updatedProduct;
 		if (isEditing && id) {
 			updatedProduct = await updateProduct({
@@ -75,7 +77,7 @@
 			window.location.reload();
 		} catch (error) {
 			console.error('Error deleting product:', error);
-			showError('Error deleting product. Please try again.');
+			showError('Error deleting product as it exists in the StoreManager. Please try again.');
 		}
 	}
 
@@ -94,12 +96,25 @@
 	function navigateToProductDetail(id: number) {
 		goto(`/products/${id}`);
 	}
+
+	function downloadToExcel() {
+    const ws = XLSX.utils.json_to_sheet(products.map(p => ({
+			'id': p.id,
+      'Product Name': p.name,
+      'SuggestedSellingPrice': p.suggestedSellingPrice,
+			'WeightedItem': p.weightedItem
+    })));
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, 'Products');
+    XLSX.writeFile(wb, 'Products.xlsx');
+  }
 </script>
 
 <Nav />
 <div class="heading">
   <h1 class="page-title">Products</h1>
   <button on:click={openAddModal} class="add">Add New Product</button>
+	<button on:click={downloadToExcel} class="download">Download to Excel</button>
 </div>
 
 {#if error}

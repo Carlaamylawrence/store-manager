@@ -90,3 +90,12 @@ C:\repo\store\store-manager\StoreMangerApp\StoreManger\obj\Debug\net8.0\StoreMan
 C:\repo\store\store-manager\StoreMangerApp\StoreManger\obj\Debug\net8.0\StoreManger.genruntimeconfig.cache
 C:\repo\store\store-manager\StoreMangerApp\StoreManger\obj\Debug\net8.0\ref\StoreManger.dll
 C:\repo\store\store-manager\StoreMangerApp\StoreManger\bin\Debug\net8.0\Serilog.dll
+C:\repo\store\store-manager\StoreMangerApp\StoreManger\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\repo\store\store-manager\StoreMangerApp\StoreManger\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\repo\store\store-manager\StoreMangerApp\StoreManger\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\repo\store\store-manager\StoreMangerApp\StoreManger\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\repo\store\store-manager\StoreMangerApp\StoreManger\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\repo\store\store-manager\StoreMangerApp\StoreManger\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\repo\store\store-manager\StoreMangerApp\StoreManger\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\repo\store\store-manager\StoreMangerApp\StoreManger\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\repo\store\store-manager\StoreMangerApp\StoreManger\bin\Debug\net8.0\Serilog.Sinks.File.dll

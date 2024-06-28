@@ -5,6 +5,7 @@
   import Nav from '../../components/navbar/nav.svelte';
   import { goto } from '$app/navigation';
   import '../../styles/modal.css';
+  import * as XLSX from 'xlsx';
 
   let branches: Branch[] = [];
   let showModal = false;
@@ -73,7 +74,7 @@
       branches = branches.filter(branch => branch.id !== id);
     } catch (error) {
       console.error('Error deleting branch:', error);
-      showError('Error deleting branch. Please try again.');
+      showError('Error deleting branch  as it exists in the StoreManager. Please try again.');
     }
   }
 
@@ -93,12 +94,25 @@
   function navigateToBranchDetail(id: number) {
 		goto(`/branches/${id}`);
 	}
+
+  function downloadToExcel() {
+    const ws = XLSX.utils.json_to_sheet(branches.map(b => ({
+			'id': b.id,
+      'Branch Name': b.name,
+      'OpenDate': b.openDate,
+			'TelephoneNumber': b.telephoneNumber
+    })));
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, 'Branches');
+    XLSX.writeFile(wb, 'Branches.xlsx');
+  }
 </script>
 <Nav/>
 
 <div class="heading">
   <h1 class="page-title">Branches</h1>
   <button on:click={openAddModal} class="add">Add New Branch</button>
+  <button on:click={downloadToExcel} class="download">Download to Excel</button>
 </div>
 
 {#if error}

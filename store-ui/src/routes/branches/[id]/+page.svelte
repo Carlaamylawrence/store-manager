@@ -1,39 +1,39 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { fetchProduct } from '$lib/repos/productRepo';
-  import type { Product } from '$lib/models/Product';
+  import { fetchBranch } from '$lib/repos/branchRepo';
+  import type { Branch } from '$lib/models/Branch';
   import { goto } from '$app/navigation';
   import { page } from '$app/stores';
   import Nav from '../../../components/navbar/nav.svelte';
 
   const id = $page.params.id;
-  let product: Product | null = null;
+  let branch: Branch | null = null;
 
   onMount(async () => {
     try {
-      product = await fetchProduct(id);
+      branch = await fetchBranch(id);
     } catch (error) {
-      console.error('Error fetching product:', error);
+      console.error('Error fetching branch:', error);
     }
   });
 
   function handleBackToList() {
-    goto('/products'); 
+    goto('/branches'); 
   }
 </script>
 
 <Nav/>
 
-<h1>Product View</h1>
-{#if product}
-  <div class="product-container">
-    <h2>{product.name}</h2>
-    <p class="product-detail"><strong>Weighted Item:</strong> {product.weightedItem ? 'Yes' : 'No'}</p>
-    <p class="product-detail"><strong>Suggested Selling Price:</strong> R{product.suggestedSellingPrice.toFixed(2)}</p>
-    <button on:click={handleBackToList} class="back-button">Back to Products List</button>
+<h1>Branch View</h1>
+{#if branch}
+  <div class="branch-container">
+    <h2>{branch.name}</h2>
+    <p class="branch-detail"><strong>Telephone Number:</strong> {branch.telephoneNumber}</p>
+    <p class="branch-detail"><strong>Open Date:</strong> {branch.openDate}</p>
+    <button on:click={handleBackToList} class="back-button">Back to Branch List</button>
   </div>
 {:else}
-  <p>Loading product details...</p>
+  <p>Loading branch details...</p>
 {/if}
 
 <style>
@@ -47,7 +47,7 @@
     margin-bottom: 20px;
   }
 
-  .product-container {
+  .branch-container {
     margin: 0 auto;
     padding: 20px;
     max-width: 600px;
@@ -65,7 +65,7 @@
     margin-bottom: 10px;
   }
 
-  .product-detail {
+  .branch-detail {
     font-family: "Albert Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
