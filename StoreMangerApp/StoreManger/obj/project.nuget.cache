@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TlwCn9O1/X0kwtq/H3lDlW8WT2CMdHnLW9cYbnwRigQH9Ap3Iqofu9pcteoWJSdAK2XXoYNb3M2/0piRQwkP4w==",
+  "dgSpecHash": "Q58hdWBBiM97O2gEDJNwoxb3cBecYt6XyZ81OUkgla9iNh6iD2nhI84RoCYHUj1q8LxO6BXr2hDDy/9oKzgBTw==",
   "success": true,
   "projectFilePath": "C:\\repo\\store\\store-manager\\StoreMangerApp\\StoreManger\\StoreManger.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\Carla Lawrence\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Carla Lawrence\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Carla Lawrence\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Carla Lawrence\\.nuget\\packages\\serilog\\4.0.0\\serilog.4.0.0.nupkg.sha512",
     "C:\\Users\\Carla Lawrence\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\Carla Lawrence\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\Carla Lawrence\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",

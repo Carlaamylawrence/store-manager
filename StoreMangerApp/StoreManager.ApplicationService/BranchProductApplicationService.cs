@@ -29,5 +29,23 @@ namespace StoreManager.ApplicationService
       }
       return (0, false, valid.messages);
     }
+
+    public async Task<BranchProduct> Find(int id)
+    {
+
+      return await _branchProductRepository.FindById(id);
+    }
+
+    public async Task<bool> Delete(int id)
+    {
+      var product = await Find(id);
+
+      if (product != null)
+      {
+        await _branchProductRepository.Delete(product);
+        return true;
+      }
+      return false;
+    }
   }
 }

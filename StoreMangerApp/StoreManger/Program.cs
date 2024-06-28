@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -19,6 +20,15 @@ builder.Services.AddTransient<BranchesApplicationService>();
 builder.Services.AddTransient<IBranchesRepository, BranchesRepository>();
 builder.Services.AddTransient<BranchProductApplicationService>();
 builder.Services.AddTransient<IBranchProductRepository, BranchProductRepository>();
+builder.Services.AddCors(options =>
+{
+  options.AddPolicy("CorsPolicy",
+            builder => builder.WithOrigins("*")
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            // Exposes file name on retrieval for client
+            .WithExposedHeaders("Content-Disposition"));
+});
 
 var app = builder.Build();
 
@@ -34,5 +44,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+app.UseCors("CorsPolicy");
 
 app.Run();

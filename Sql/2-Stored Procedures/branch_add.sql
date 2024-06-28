@@ -25,5 +25,3 @@ as
 go
 grant execute on branch_add to public
 go
-
-select * from branch where id = 1

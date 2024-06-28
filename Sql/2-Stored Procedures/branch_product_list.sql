@@ -4,18 +4,19 @@ go
 create procedure branch_product_list
 as
   SELECT 
-    b.Name AS BranchName,
-    p.Name AS ProductName
+		bp.id,
+    bra.Name AS BranchName,
+    pro.Name AS ProductName
 FROM 
     BranchProduct bp
 JOIN 
-    Branch b ON bp.BranchID = b.Id
+    Branch bra ON bp.BranchID = bra.Id
 JOIN 
-    Product p ON bp.ProductID = p.ID
+    Product pro ON bp.ProductID = pro.ID
 
 go
 
 grant execute on branch_product_list to public
 go
 
-exec branch_product_list
+--exec branch_product_list

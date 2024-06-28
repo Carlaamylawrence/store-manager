@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Xuk6Zx/EKeceRuKuLRRMC1+r6VbXu87XhKU7fSpRhgTDpnP/d5jduHuyY0CFSe809PrmIjJd11ZfGjJQZq2ICQ==",
+  "dgSpecHash": "wyfKKrReSNVk0nJ3D8TdjvE7rjYiTdKgmgQgHBvGrOsI+RwWMUZXXfllo2BtKjwsGjQKGMMOqkJNkpC/ycPBXg==",
   "success": true,
   "projectFilePath": "C:\\repo\\store\\store-manager\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Carla Lawrence\\.nuget\\packages\\serilog\\4.0.0\\serilog.4.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

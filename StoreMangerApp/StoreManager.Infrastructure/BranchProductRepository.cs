@@ -28,5 +28,18 @@ namespace StoreManager.Infrastructure
 
       return affectedRows;
     }
+
+    public async Task<BranchProduct> FindById(int id)
+    {
+      var branchProducts = await _connection.QueryAsync<BranchProduct>("branch_product_findbyid", new { id },
+     commandType: CommandType.StoredProcedure);
+      return branchProducts.FirstOrDefault();
+    }
+
+    public async Task Delete(BranchProduct branchProduct)
+    {
+      await _connection.ExecuteAsync("branch_product_delete", new { id = branchProduct.Id },
+        commandType: CommandType.StoredProcedure);
+    }
   }
 }

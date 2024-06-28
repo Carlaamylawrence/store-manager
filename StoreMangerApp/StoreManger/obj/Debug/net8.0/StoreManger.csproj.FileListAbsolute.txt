@@ -89,3 +89,4 @@ C:\repo\store\store-manager\StoreMangerApp\StoreManger\obj\Debug\net8.0\refint\S
 C:\repo\store\store-manager\StoreMangerApp\StoreManger\obj\Debug\net8.0\StoreManger.pdb
 C:\repo\store\store-manager\StoreMangerApp\StoreManger\obj\Debug\net8.0\StoreManger.genruntimeconfig.cache
 C:\repo\store\store-manager\StoreMangerApp\StoreManger\obj\Debug\net8.0\ref\StoreManger.dll
+C:\repo\store\store-manager\StoreMangerApp\StoreManger\bin\Debug\net8.0\Serilog.dll

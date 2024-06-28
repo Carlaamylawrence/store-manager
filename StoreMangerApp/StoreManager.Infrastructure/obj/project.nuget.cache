@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "83e4klmKiPI1Mr3mkZKaFicLMMK38p2iPjPJilHz9k2vum8BI0dZKwrd5AX4l6KHpdk+THTnAdicU732viNP3g==",
+  "dgSpecHash": "1HXDnpn4pkP1pAHCCp941gA38rjMZ3Enjp8a7JlUwwtbnmxzIwPePkmoq6GjM9RJPMszLyxAohG1c9DUZ+bdHw==",
   "success": true,
   "projectFilePath": "C:\\repo\\store\\store-manager\\StoreMangerApp\\StoreManager.Infrastructure\\StoreManager.Infrastructure.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Carla Lawrence\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512"
+    "C:\\Users\\Carla Lawrence\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
+    "C:\\Users\\Carla Lawrence\\.nuget\\packages\\serilog\\4.0.0\\serilog.4.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -21,3 +21,4 @@ C:\repo\store\store-manager\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\
 C:\repo\store\store-manager\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\refint\StoreManager.Domain.dll
 C:\repo\store\store-manager\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\StoreManager.Domain.pdb
 C:\repo\store\store-manager\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\ref\StoreManager.Domain.dll
+C:\repo\store\store-manager\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\StoreManager.Domain.csproj.AssemblyReference.cache

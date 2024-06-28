@@ -4,8 +4,10 @@ namespace StoreManager.Domain
 {
   public class BranchProduct
   {
+    public int Id { get; set; }
     public string BranchName { get; set; }
     public string ProductName { get; set; }
+
 
     public (bool isValid, List<string> messages) BranchProductIsValid()
     {

@@ -32,5 +32,21 @@ namespace StoreManger.Controllers
       }
       return new ObjectResult("") { StatusCode = (int)HttpStatusCode.Created };
     }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(int id)
+    {
+      var result = await _branchProductApplicationService.Delete(id);
+      if (!result)
+        return BadRequest("Unable to delete Branch Product");
+      return Ok();
+    }
+
+    [HttpGet("{id}")]
+    public async Task<IActionResult> Get(int id)
+    {
+      var result = await _branchProductApplicationService.Find(id);
+      return Ok(result);
+    }
   }
 }
