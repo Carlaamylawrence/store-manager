@@ -183,3 +183,8 @@ Error Number:547,State:0,Class:16
 2024-06-28 19:01:38.183 +02:00 [INF] Application started. Press Ctrl+C to shut down.
 2024-06-28 19:01:38.184 +02:00 [INF] Hosting environment: Development
 2024-06-28 19:01:38.185 +02:00 [INF] Content root path: C:\repo\store\store-manager\StoreMangerApp\StoreManger
+2024-06-28 19:48:02.735 +02:00 [INF] Now listening on: https://localhost:7086
+2024-06-28 19:48:02.756 +02:00 [INF] Now listening on: http://localhost:5226
+2024-06-28 19:48:02.760 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-28 19:48:02.761 +02:00 [INF] Hosting environment: Development
+2024-06-28 19:48:02.762 +02:00 [INF] Content root path: C:\repo\store\store-manager\StoreMangerApp\StoreManger

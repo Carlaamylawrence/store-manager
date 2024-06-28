@@ -1,60 +1,99 @@
-﻿using Dapper;
+﻿using Serilog;
 using StoreManager.Domain;
 using System.Data;
+using Dapper;
 
 namespace StoreManager.Infrastructure
 {
   public class BranchesRepository : IBranchesRepository
   {
     private readonly IDbConnection _connection;
+
     public BranchesRepository(IDbConnection connection)
     {
-      _connection = connection;
+      _connection = connection ?? throw new ArgumentNullException(nameof(connection));
     }
 
     public async Task<IEnumerable<Branch>> List()
     {
-      return await _connection.QueryAsync<Branch>("branch_list", commandType: CommandType.StoredProcedure);
+      try
+      {
+        return await _connection.QueryAsync<Branch>("branch_list", commandType: CommandType.StoredProcedure);
+      }
+      catch (Exception ex)
+      {
+        Log.Error(ex, "Error fetching branches");
+        throw;
+      }
     }
 
     public async Task<Branch> FindById(int id)
     {
-      var branches = await _connection.QueryAsync<Branch>("branch_findbyid", new { id },
-     commandType: CommandType.StoredProcedure);
-      return branches.FirstOrDefault();
+      try
+      {
+        var branches = await _connection.QueryAsync<Branch>("branch_findbyid", new { id },
+            commandType: CommandType.StoredProcedure);
+        return branches.FirstOrDefault();
+      }
+      catch (Exception ex)
+      {
+        Log.Error(ex, "Error finding branch by ID: {Id}", id);
+        throw;
+      }
     }
-
 
     public async Task<int> Add(Branch branch)
     {
-      var parameters = new DynamicParameters();
-      parameters.Add("@id", branch.Id);
-      parameters.Add("@name", branch.Name);
-      parameters.Add("@telephoneNumber", branch.TelephoneNumber);
-      parameters.Add("@openDate", branch.OpenDate);
+      try
+      {
+        var parameters = new DynamicParameters();
+        parameters.Add("@id", branch.Id);
+        parameters.Add("@name", branch.Name);
+        parameters.Add("@telephoneNumber", branch.TelephoneNumber);
+        parameters.Add("@openDate", branch.OpenDate);
 
-      var affectedRows = await _connection.ExecuteAsync("branch_add", parameters, commandType: CommandType.StoredProcedure);
-
-      return affectedRows;
+        return await _connection.ExecuteAsync("branch_add", parameters, commandType: CommandType.StoredProcedure);
+      }
+      catch (Exception ex)
+      {
+        Log.Error(ex, "Error adding branch");
+        throw;
+      }
     }
 
     public async Task Edit(Branch updatedBranch)
     {
-      var parameters = new
+      try
       {
-        id = updatedBranch.Id,
-        name = updatedBranch.Name,
-        telephoneNumber = updatedBranch.TelephoneNumber,
-        openDate = updatedBranch.OpenDate
+        var parameters = new
+        {
+          id = updatedBranch.Id,
+          name = updatedBranch.Name,
+          telephoneNumber = updatedBranch.TelephoneNumber,
+          openDate = updatedBranch.OpenDate
+        };
 
-      };
-      await _connection.ExecuteAsync("branch_edit", parameters, commandType: CommandType.StoredProcedure);
+        await _connection.ExecuteAsync("branch_edit", parameters, commandType: CommandType.StoredProcedure);
+      }
+      catch (Exception ex)
+      {
+        Log.Error(ex, "Error editing branch with ID: {Id}", updatedBranch.Id);
+        throw;
+      }
     }
 
     public async Task Delete(Branch branch)
     {
-      await _connection.ExecuteAsync("branch_delete", new { id = branch.Id },
-        commandType: CommandType.StoredProcedure);
+      try
+      {
+        await _connection.ExecuteAsync("branch_delete", new { id = branch.Id },
+            commandType: CommandType.StoredProcedure);
+      }
+      catch (Exception ex)
+      {
+        Log.Error(ex, "Error deleting branch with ID: {Id}", branch.Id);
+        throw;
+      }
     }
   }
 }
