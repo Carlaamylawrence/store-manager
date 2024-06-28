@@ -19,7 +19,7 @@ export async function fetchBranch(id: number): Promise<Branch> {
   return await response.json();
 }
 
-export async function addBranch(branch: Omit<Branch, 'id'>): Promise<Branch> {
+export async function addBranch(branch: Branch): Promise<Branch> {
   const response = await fetch(`${API_BASE_URL}/branches`, {
     method: 'POST',
     headers: {
@@ -30,10 +30,10 @@ export async function addBranch(branch: Omit<Branch, 'id'>): Promise<Branch> {
   if (!response.ok) {
     throw new Error('Failed to create branch');
   }
-  return await response.json();
+  return branch;
 }
 
-export async function updateBranch(branch : Branch): Promise<void> {
+export async function updateBranch(branch : Branch): Promise<Branch> {
   const response = await fetch(`${API_BASE_URL}/branches/${branch.id}`, {
     method: 'PUT',
     headers: {
@@ -44,7 +44,7 @@ export async function updateBranch(branch : Branch): Promise<void> {
   if (!response.ok) {
     throw new Error(`Failed to update ${branch.name}`);
   }
-  return await response.json();
+  return branch;
 }
 
 export async function deleteBranch(id: number): Promise<void> {

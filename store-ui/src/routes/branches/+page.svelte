@@ -23,6 +23,7 @@
 
   function openAddModal() {
     branchInModal = {
+      id:'',
       name: '',
       telephoneNumber: '',
       openDate: null
@@ -41,7 +42,6 @@
   }
 
   async function handleSubmit() {
-    try {
       const { id, name, telephoneNumber, openDate } = branchInModal;
 
       if (isEditing && id) {
@@ -52,7 +52,11 @@
           openDate
         });
 
-        branches = branches.map(p => (p.id === id ? updatedBranch : p));
+        if (updatedBranch) {
+				branches = branches.map((p) => (p.id === id ? updatedBranch : p));
+				closeModal();
+				window.location.reload();
+        }
       } else {
         const addedBranch = await addBranch({
           id,
@@ -60,12 +64,12 @@
           telephoneNumber,
           openDate
         });
+        if (addedBranch) {
         branches = [...branches, addedBranch];
-      }
-      closeModal();
-    } catch (error) {
-      console.error('Error saving branch:', error);
+        closeModal();
+			}
     }
+      closeModal();
   }
 
   async function handleDeleteBranch(id: number) {

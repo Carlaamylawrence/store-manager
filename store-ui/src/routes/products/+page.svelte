@@ -40,15 +40,14 @@
 
 	async function handleSubmit() {
 		const { id, name, weightedItem, suggestedSellingPrice } = productInModal;
-		
-		let updatedProduct;
+
 		if (isEditing && id) {
-			updatedProduct = await updateProduct({
-				id,
-				name,
-				weightedItem,
-				suggestedSellingPrice
-			});
+			const updatedProduct = await updateProduct({
+            id,
+            name,
+            weightedItem,
+            suggestedSellingPrice
+        });
 
 			if (updatedProduct) {
 				products = products.map((p) => (p.id === id ? updatedProduct : p));
@@ -56,12 +55,12 @@
 				window.location.reload();
 			}
 		} else {
-			await addProduct({
-				id,
-				name,
-				weightedItem,
-				suggestedSellingPrice
-			});
+			const addedProduct = await addProduct({
+            id,
+            name,
+            weightedItem,
+            suggestedSellingPrice
+        });
 			if (addedProduct) {
 				products = [...products, addedProduct];
 				closeModal();
