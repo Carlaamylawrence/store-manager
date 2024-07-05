@@ -1,0 +1,15 @@
+2024-07-03 22:54:51.919 +02:00 [INF] Now listening on: https://localhost:7086
+2024-07-03 22:54:51.940 +02:00 [INF] Now listening on: http://localhost:5226
+2024-07-03 22:54:51.943 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-03 22:54:51.945 +02:00 [INF] Hosting environment: Development
+2024-07-03 22:54:51.947 +02:00 [INF] Content root path: C:\repo\store\store-manager\StoreMangerApp\StoreManger
+2024-07-03 23:10:22.586 +02:00 [INF] Now listening on: https://localhost:7086
+2024-07-03 23:10:22.623 +02:00 [INF] Now listening on: http://localhost:5226
+2024-07-03 23:10:22.628 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-03 23:10:22.631 +02:00 [INF] Hosting environment: Development
+2024-07-03 23:10:22.632 +02:00 [INF] Content root path: C:\repo\store\store-manager\StoreMangerApp\StoreManger
+2024-07-03 23:11:35.500 +02:00 [INF] Now listening on: https://localhost:7086
+2024-07-03 23:11:35.514 +02:00 [INF] Now listening on: http://localhost:5226
+2024-07-03 23:11:35.517 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-03 23:11:35.518 +02:00 [INF] Hosting environment: Development
+2024-07-03 23:11:35.519 +02:00 [INF] Content root path: C:\repo\store\store-manager\StoreMangerApp\StoreManger

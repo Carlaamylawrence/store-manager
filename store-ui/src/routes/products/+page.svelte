@@ -55,20 +55,25 @@
 				window.location.reload();
 			}
 		} else {
-			const addedProduct = await addProduct({
-            id,
-            name,
-            weightedItem,
-            suggestedSellingPrice
-        });
-			if (addedProduct) {
-				products = [...products, addedProduct];
-				closeModal();
-			}
-		}
-		closeModal();
-	}
-
+        try {
+            const addedProduct = await addProduct({
+                id,
+                name,
+                weightedItem,
+                suggestedSellingPrice
+            });
+            if (addedProduct) {
+                products = [...products, addedProduct];
+                closeModal();
+            }
+        } catch (error) {
+            console.error('Failed to add product:', error);
+            showError('Failed to add product. Please try again.');
+        }
+    }
+    closeModal();
+}
+	
 	async function handleDeleteProduct(id: number) {
 		try {
 			await deleteProduct(id);
@@ -107,6 +112,8 @@
     XLSX.utils.book_append_sheet(wb, ws, 'Products');
     XLSX.writeFile(wb, 'Products.xlsx');
   }
+
+	
 </script>
 
 <Nav />

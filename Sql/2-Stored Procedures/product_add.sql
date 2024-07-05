@@ -1,26 +1,17 @@
-drop procedure if exists product_add
-go
-  create procedure product_add
-      (	 @id int,
-         @name varchar(100),
-         @weightedItem bit,
-				 @suggestedSellingPrice decimal(14,2)
-      )  
-as
+DROP PROCEDURE IF EXISTS product_add;
+GO
 
- insert  product
-      (  id,
-         name,
-         weightedItem,
-         suggestedSellingPrice
-      )
+CREATE PROCEDURE product_add
+    @id INT,
+    @name VARCHAR(100),
+    @weightedItem BIT,
+    @suggestedSellingPrice DECIMAL(14,2)
+AS
+BEGIN
+    INSERT INTO product (id, name, weightedItem, suggestedSellingPrice)
+    VALUES (@id, @name, @weightedItem, @suggestedSellingPrice);
+END
+GO
 
- values
-      (  @id,
-         @name,
-         @weightedItem,
-         @suggestedSellingPrice
-      )
-go
-grant execute on product_add to public
-go
+GRANT EXECUTE ON product_add TO public;
+GO
