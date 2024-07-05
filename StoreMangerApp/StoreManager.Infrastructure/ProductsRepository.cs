@@ -99,5 +99,66 @@ namespace StoreManager.Infrastructure
         throw;
       }
     }
+    public async Task<bool> AddFile(Stream fileStream)
+    {
+      try
+      {
+        using (var reader = new StreamReader(fileStream))
+        {
+          string fileContent = await reader.ReadToEndAsync();
+          var products = ParseFileContent(fileContent);
+          var dataTable = ConvertToDataTable(products);
+
+          var parameters = new DynamicParameters();
+          parameters.Add("@products", dataTable.AsTableValuedParameter("ProductType"));
+
+          await _connection.ExecuteAsync("product_bulk_insert", parameters, commandType: CommandType.StoredProcedure);
+          return true;
+        }
+      }
+      catch (Exception ex)
+      {
+        Log.Error(ex, "Error processing uploaded file");
+        throw;
+      }
+    }
+
+    private List<Product> ParseFileContent(string fileContent)
+    {
+      var products = new List<Product>();
+      var lines = fileContent.Split('\n');
+      foreach (var line in lines)
+      {
+        var values = line.Split(',');
+        if (values.Length == 4)
+        {
+          products.Add(new Product
+          {
+            Id = int.Parse(values[0]),
+            Name = values[1],
+            WeightedItem = bool.Parse(values[2]),
+            SuggestedSellingPrice = decimal.Parse(values[3])
+          });
+        }
+      }
+      return products;
+    }
+
+    private DataTable ConvertToDataTable(List<Product> products)
+    {
+      var table = new DataTable();
+      table.Columns.Add("Id", typeof(int));
+      table.Columns.Add("Name", typeof(string));
+      table.Columns.Add("WeightedItem", typeof(bool));
+      table.Columns.Add("SuggestedSellingPrice", typeof(decimal));
+
+      foreach (var product in products)
+      {
+        table.Rows.Add(product.Id, product.Name, product.WeightedItem, product.SuggestedSellingPrice);
+      }
+
+      return table;
+    }
+
   }
 }

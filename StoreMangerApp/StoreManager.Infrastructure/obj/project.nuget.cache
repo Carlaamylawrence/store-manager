@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "84Q8PCGPIj63zYOhOIwPsr930/lFxdoEETZlm8MO5eGSoqX8J41bbABX4TzlUfKLn03f7BkPaUgQNLFUnwluMQ==",
+  "dgSpecHash": "lFZkWsDL/2TotI7cZ9hFrkrufoLGsTq8U7kVGfuHuaTd9ofyzHHcupFl2phFxcx32QlcbplgvEOVRWfZ1s7XEA==",
   "success": true,
-  "projectFilePath": "C:\\repo\\store\\store-manager\\StoreMangerApp\\StoreManager.Infrastructure\\StoreManager.Infrastructure.csproj",
+  "projectFilePath": "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManager.Infrastructure\\StoreManager.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Carla Lawrence\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\Carla Lawrence\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

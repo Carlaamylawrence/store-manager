@@ -1,21 +1,16 @@
-drop procedure if exists branch_product_list
+drop procedure if exists branch_list
 go
 
-create procedure branch_product_list
+create procedure branch_list
 as
-  SELECT 
-    b.Name AS BranchName,
-    p.Name AS ProductName
-FROM 
-    BranchProduct bp
-JOIN 
-    Branch b ON bp.BranchID = b.Id
-JOIN 
-    Product p ON bp.ProductID = p.ID
-
+  select Id,
+         Name,
+         TelephoneNumber,
+				 OpenDate
+  from branch
 go
 
-grant execute on branch_product_list to public
+grant execute on branch_list to public
 go
 
-exec branch_product_list
+--exec branch_list

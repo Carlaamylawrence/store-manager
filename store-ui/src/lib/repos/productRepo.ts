@@ -57,3 +57,21 @@ export async function deleteProduct(id: number): Promise<void> {
     throw new Error('Failed to delete product');
   }
 }
+
+export async function uploadProducts(formData: FormData): Promise<void> {
+  try {
+    const response = await fetch(`${API_BASE_URL}/products/upload`, {
+      method: 'POST',
+      body: formData,
+    });
+
+    if (!response.ok) {
+      throw new Error('Failed to upload file');
+    }
+
+    console.log('File uploaded successfully', await response.json());
+  } catch (error) {
+    console.error('Error uploading file', error);
+    throw error;
+  }
+}

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Serilog;
 using StoreManager.ApplicationService;
 using StoreManager.Domain;
 using System.Net;
@@ -37,6 +38,25 @@ namespace StoreManger.Controllers
         return BadRequest(result);
       }
       return new ObjectResult("") { StatusCode = (int)HttpStatusCode.Created };
+    }
+
+    [HttpPost("upload")]
+    public async Task<IActionResult> PostUpload()
+    {
+      var formFile = Request.Form.Files.FirstOrDefault();
+      if (formFile == null)
+      {
+        return BadRequest("No file uploaded.");
+      }
+
+      using (var stream = new MemoryStream())
+      {
+        await formFile.CopyToAsync(stream);
+        stream.Position = 0;
+        await _productsApplicationService.AddFile(stream);
+      }
+
+      return Created(string.Empty, null);
     }
 
     [HttpPut("{id}")]

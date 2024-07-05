@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { fetchProducts, deleteProduct, addProduct, updateProduct } from '$lib/repos/productRepo';
+	import { fetchProducts, deleteProduct, addProduct, updateProduct, uploadProducts } from '$lib/repos/productRepo';
 	import type { Product } from '$lib/models/Product';
 	import Nav from '../../components/navbar/nav.svelte';
 	import { goto } from '$app/navigation';
@@ -12,6 +12,8 @@
 	let isEditing = false;
 	let productInModal: Partial<Product> = {};
 	let error: string = '';
+	let selectedFile: File | null = null;
+
 
 	onMount(async () => {
 		try {
@@ -113,7 +115,33 @@
     XLSX.writeFile(wb, 'Products.xlsx');
   }
 
-	
+	function handleFileChange(event: Event) {
+    const input = event.target as HTMLInputElement;
+    if (input.files && input.files.length > 0) {
+      selectedFile = input.files[0];
+    } else {
+      selectedFile = null;
+    }
+  }
+
+  async function handleFileUpload() {
+    if (!selectedFile) {
+      showError('Please select a file to upload.');
+      return;
+    }
+
+    try {
+      const formData = new FormData();
+      formData.append('file', selectedFile);
+
+      await uploadProducts(formData);
+      products = await fetchProducts();
+      selectedFile = null;
+    } catch (error) {
+      console.error('Failed to upload file:', error);
+      showError('Failed to upload file. Please try again.');
+    }
+  }
 </script>
 
 <Nav />
@@ -121,6 +149,10 @@
   <h1 class="page-title">Products</h1>
   <button on:click={openAddModal} class="add">Add New Product</button>
 	<button on:click={downloadToExcel} class="download">Download to Excel</button>
+	<div class="import">
+		<input type="file" class="import-input" on:change={handleFileChange} />
+		<button on:click={handleFileUpload}>Upload File</button>
+  </div>
 </div>
 
 {#if error}
@@ -152,7 +184,7 @@
 				<form on:submit|preventDefault={handleSubmit}>
 					<div class="form-input">
 						<label for="id">ID</label>
-						<input id="id" type="number" bind:value={productInModal.id} />
+						<input id="id" type="number" bind:value={productInModal.id} disabled={isEditing}/>
 					</div>
 					<div class="form-input">
 						<label for="name">Name</label>
@@ -189,6 +221,20 @@
     justify-content: space-around;
   }
 
+	.import{
+		background-color: #478a6c2f;
+		border-radius: 15px;
+	}
+
+	.import-input{
+		margin-left: 5px;
+    padding: 10px;
+    font-family: "Albert Sans", Sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5em;
+	}
+
   .page-title{
     font-family: "Albert Sans", sans-serif;
 		font-weight: 700;
@@ -196,7 +242,6 @@
 		line-height: 1.5;
     font-size:60px;
     color: #00723F;
-    
   }
 
 ul {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wbE9dfEdAI+TENhxugIZFEvhbGSmxiJX1ysY7n2WcrBGdQFgs8Nmhs9WPfz/qtJ35ykBJxGLpIt9uT4HANqkJA==",
+  "dgSpecHash": "HI+GRyMxLjPlbUv08DwsY+d3j0wrBEH7YFob2Dxci72UrWiia9/PWlPHy7NQliMfoUUfkUWpuPU1DQbL5+bESA==",
   "success": true,
-  "projectFilePath": "C:\\repo\\store\\store-manager\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj",
+  "projectFilePath": "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Carla Lawrence\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Carla Lawrence\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.0\\microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512",

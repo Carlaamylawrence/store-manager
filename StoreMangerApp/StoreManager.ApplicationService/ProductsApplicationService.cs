@@ -1,5 +1,9 @@
-﻿using StoreManager.Domain;
+﻿using Dapper;
+using Serilog;
+using StoreManager.Domain;
 using StoreManager.Infrastructure;
+using System.Data.Common;
+using System.Data;
 
 namespace StoreManager.ApplicationService
 {
@@ -57,5 +61,9 @@ namespace StoreManager.ApplicationService
       return false;
     }
 
+    public async Task<bool> AddFile(Stream fileStream)
+    {
+      return await _productsRepository.AddFile(fileStream);
+    }
   }
 }
