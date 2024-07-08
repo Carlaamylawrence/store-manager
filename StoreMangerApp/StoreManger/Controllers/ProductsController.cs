@@ -41,22 +41,33 @@ namespace StoreManger.Controllers
     }
 
     [HttpPost("upload")]
-    public async Task<IActionResult> PostUpload()
+    public async Task<IActionResult> UploadFile(IFormFile file)
     {
-      var formFile = Request.Form.Files.FirstOrDefault();
-      if (formFile == null)
+      if (file == null || file.Length == 0)
       {
-        return BadRequest("No file uploaded.");
+        return BadRequest("No file uploaded");
       }
 
-      using (var stream = new MemoryStream())
+      try
       {
-        await formFile.CopyToAsync(stream);
-        stream.Position = 0;
-        await _productsApplicationService.AddFile(stream);
+        using (var stream = file.OpenReadStream())
+        {
+          var success = await _productsApplicationService.AddFile(stream);
+          if (success)
+          {
+            return Created("File uploaded successfully", new { message = "File uploaded successfully" });
+          }
+          else
+          {
+            return StatusCode(500, "An error occurred while processing the file");
+          }
+        }
       }
-
-      return Created(string.Empty, null);
+      catch (Exception ex)
+      {
+        Log.Error(ex, "Error uploading file");
+        return StatusCode(500, "Internal server error");
+      }
     }
 
     [HttpPut("{id}")]

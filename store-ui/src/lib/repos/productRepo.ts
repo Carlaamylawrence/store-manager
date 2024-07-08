@@ -69,9 +69,15 @@ export async function uploadProducts(formData: FormData): Promise<void> {
       throw new Error('Failed to upload file');
     }
 
-    console.log('File uploaded successfully', await response.json());
+    const responseBody = await response.text();
+    if (responseBody) {
+      console.log('File uploaded successfully', JSON.parse(responseBody));
+    } else {
+      console.log('File uploaded successfully with no response body');
+    }
   } catch (error) {
     console.error('Error uploading file', error);
     throw error;
   }
 }
+

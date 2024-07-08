@@ -1,12 +1,10 @@
-CREATE PROCEDURE dbo.product_bulk_insert
-    @products dbo.ProductType READONLY
+CREATE PROCEDURE product_bulk_insert
+    @Id INT,
+    @Name NVARCHAR(100),
+    @WeightedItem BIT,
+    @SuggestedSellingPrice DECIMAL(18, 2)
 AS
 BEGIN
-    SET NOCOUNT ON;
-
-    INSERT INTO dbo.Product (id, name, weightedItem, suggestedSellingPrice)
-    SELECT id, name, weightedItem, suggestedSellingPrice
-    FROM @products;
-
-    SELECT @@ROWCOUNT AS 'RowsInserted';
-END;
+    INSERT INTO Product (Id, Name, WeightedItem, SuggestedSellingPrice)
+    VALUES (@Id, @Name, @WeightedItem, @SuggestedSellingPrice);
+END
