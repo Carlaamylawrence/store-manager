@@ -4,7 +4,7 @@ Welcome to my Store Manager
 
 This app uses svelte so please make sure you install and the relevant node packages
 
-To beigin
+To begin
 1. Execute the queries in the SQL folder called Table Creates
 2. Execute the following
 
@@ -141,3 +141,4 @@ VALUES
 (1009, 54874),
 (1009, 58837);
 
+3. Execute all the fiels in the Stored Procedures folder
