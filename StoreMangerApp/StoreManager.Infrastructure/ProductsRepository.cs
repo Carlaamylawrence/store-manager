@@ -112,17 +112,12 @@ namespace StoreManager.Infrastructure
           var products = ParseFileContent(fileContent);
           Log.Information("{ProductCount} products parsed from file", products.Count);
 
-          foreach (var product in products)
-          {
-            var parameters = new DynamicParameters();
-            parameters.Add("@Id", product.Id);
-            parameters.Add("@Name", product.Name);
-            parameters.Add("@WeightedItem", product.WeightedItem);
-            parameters.Add("@SuggestedSellingPrice", product.SuggestedSellingPrice);
+          var dataTable = ConvertToDataTable(products);
+          var parameters = new DynamicParameters();
+          parameters.Add("@Products", dataTable.AsTableValuedParameter("ProductType"));
 
-            await _connection.ExecuteAsync("product_bulk_insert", parameters, commandType: CommandType.StoredProcedure);
-            Log.Information("Inserted product: {Product}", product);
-          }
+          await _connection.ExecuteAsync("product_file_insert", parameters, commandType: CommandType.StoredProcedure);
+          Log.Information("Inserted {ProductCount} products into the database", products.Count);
 
           return true;
         }
@@ -139,15 +134,13 @@ namespace StoreManager.Infrastructure
       var products = new List<Product>();
       var lines = fileContent.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
 
-      for (int i = 0; i < lines.Length; i++)
+      foreach (var line in lines)
       {
-        var line = lines[i].Trim();
-        if (string.IsNullOrWhiteSpace(line)) continue; // Skip empty lines
-
         var values = line.Split(',');
+
         if (values.Length != 4)
         {
-          Log.Warning("Line {LineNumber} does not contain exactly 4 values: {LineContent}", i + 1, line);
+          Log.Warning("Line does not contain exactly 4 values: {LineContent}", line);
           continue;
         }
 
@@ -157,20 +150,44 @@ namespace StoreManager.Infrastructure
           {
             Id = int.Parse(values[0]),
             Name = values[1],
-            WeightedItem = bool.Parse(values[2]),
-            SuggestedSellingPrice = decimal.Parse(values[3])
+            WeightedItem = string.IsNullOrEmpty(values[2]) ? (bool?)null : bool.Parse(values[2]),
+            SuggestedSellingPrice = string.IsNullOrEmpty(values[3]) || values[3].ToUpper() == "NULL" ? (decimal?)null : decimal.Parse(values[3])
           };
+
           products.Add(product);
           Log.Information("Parsed product: {Product}", product);
         }
         catch (FormatException ex)
         {
-          Log.Error(ex, "Error parsing line {LineNumber}: {LineContent}", i + 1, line);
+          Log.Error(ex, "Error parsing line: {LineContent}", line);
         }
       }
 
       return products;
     }
 
+    private DataTable ConvertToDataTable(List<Product> products)
+    {
+      var dataTable = new DataTable();
+
+      dataTable.Columns.Add("Id", typeof(int));
+      dataTable.Columns.Add("Name", typeof(string));
+      dataTable.Columns.Add("WeightedItem", typeof(bool));
+      dataTable.Columns.Add("SuggestedSellingPrice", typeof(decimal));
+
+      foreach (var product in products)
+      {
+        var row = dataTable.NewRow();
+
+        row["Id"] = product.Id;
+        row["Name"] = product.Name;
+        row["WeightedItem"] = product.WeightedItem.HasValue ? (object)product.WeightedItem.Value : DBNull.Value;
+        row["SuggestedSellingPrice"] = product.SuggestedSellingPrice.HasValue ? (object)product.SuggestedSellingPrice.Value : DBNull.Value;
+
+        dataTable.Rows.Add(row);
+      }
+
+      return dataTable;
+    }
   }
 }

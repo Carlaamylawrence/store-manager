@@ -926,3 +926,383 @@ System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure
    at StoreManger.Controllers.ProductsController.UploadFile(IFormFile file) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManger\Controllers\ProductsController.cs:line 55
 ClientConnectionId:3813f904-8d8c-4b01-af16-c134e0e3365d
 Error Number:2812,State:62,Class:16
+2024-07-08 18:32:07.353 +02:00 [INF] Now listening on: https://localhost:7086
+2024-07-08 18:32:07.375 +02:00 [INF] Now listening on: http://localhost:5226
+2024-07-08 18:32:07.379 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-08 18:32:07.381 +02:00 [INF] Hosting environment: Development
+2024-07-08 18:32:07.382 +02:00 [INF] Content root path: C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManger
+2024-07-08 18:32:16.946 +02:00 [INF] File content read successfully
+2024-07-08 18:32:16.953 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 18:32:16.960 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 18:32:16.964 +02:00 [INF] 2 products parsed from file
+2024-07-08 18:32:36.308 +02:00 [ERR] Error processing uploaded file
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at StoreManager.Infrastructure.ProductsRepository.AddFile(Stream fileStream) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 123
+ClientConnectionId:9fbed13e-0a85-4eee-80a3-6b874a8a15c7
+Error Number:208,State:1,Class:16
+2024-07-08 18:32:36.436 +02:00 [ERR] Error uploading file
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at StoreManager.Infrastructure.ProductsRepository.AddFile(Stream fileStream) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 123
+   at StoreManager.ApplicationService.ProductsApplicationService.AddFile(Stream fileStream) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.ApplicationService\ProductsApplicationService.cs:line 66
+   at StoreManger.Controllers.ProductsController.UploadFile(IFormFile file) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManger\Controllers\ProductsController.cs:line 55
+ClientConnectionId:9fbed13e-0a85-4eee-80a3-6b874a8a15c7
+Error Number:208,State:1,Class:16
+2024-07-08 18:32:40.992 +02:00 [INF] File content read successfully
+2024-07-08 18:32:40.995 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 18:32:40.999 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 18:32:41.003 +02:00 [INF] 2 products parsed from file
+2024-07-08 18:32:42.486 +02:00 [ERR] Error processing uploaded file
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at StoreManager.Infrastructure.ProductsRepository.AddFile(Stream fileStream) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 123
+ClientConnectionId:9fbed13e-0a85-4eee-80a3-6b874a8a15c7
+Error Number:208,State:1,Class:16
+2024-07-08 18:32:42.571 +02:00 [ERR] Error uploading file
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at StoreManager.Infrastructure.ProductsRepository.AddFile(Stream fileStream) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 123
+   at StoreManager.ApplicationService.ProductsApplicationService.AddFile(Stream fileStream) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.ApplicationService\ProductsApplicationService.cs:line 66
+   at StoreManger.Controllers.ProductsController.UploadFile(IFormFile file) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManger\Controllers\ProductsController.cs:line 55
+ClientConnectionId:9fbed13e-0a85-4eee-80a3-6b874a8a15c7
+Error Number:208,State:1,Class:16
+2024-07-08 18:33:11.870 +02:00 [INF] File content read successfully
+2024-07-08 18:33:11.874 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 18:33:11.879 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 18:33:11.883 +02:00 [INF] 2 products parsed from file
+2024-07-08 18:33:53.432 +02:00 [ERR] Error processing uploaded file
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at StoreManager.Infrastructure.ProductsRepository.AddFile(Stream fileStream) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 123
+ClientConnectionId:9fbed13e-0a85-4eee-80a3-6b874a8a15c7
+Error Number:208,State:1,Class:16
+2024-07-08 18:33:53.580 +02:00 [ERR] Error uploading file
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Products'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at StoreManager.Infrastructure.ProductsRepository.AddFile(Stream fileStream) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 123
+   at StoreManager.ApplicationService.ProductsApplicationService.AddFile(Stream fileStream) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.ApplicationService\ProductsApplicationService.cs:line 66
+   at StoreManger.Controllers.ProductsController.UploadFile(IFormFile file) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManger\Controllers\ProductsController.cs:line 55
+ClientConnectionId:9fbed13e-0a85-4eee-80a3-6b874a8a15c7
+Error Number:208,State:1,Class:16
+2024-07-08 18:34:00.353 +02:00 [INF] File content read successfully
+2024-07-08 18:34:00.356 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 18:34:00.361 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 18:34:00.366 +02:00 [INF] 2 products parsed from file
+2024-07-08 18:34:02.355 +02:00 [INF] Inserted product: StoreManager.Domain.Product
+2024-07-08 18:34:11.041 +02:00 [INF] Inserted product: StoreManager.Domain.Product
+2024-07-08 18:37:15.609 +02:00 [INF] Now listening on: https://localhost:7086
+2024-07-08 18:37:15.628 +02:00 [INF] Now listening on: http://localhost:5226
+2024-07-08 18:37:15.631 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-08 18:37:15.633 +02:00 [INF] Hosting environment: Development
+2024-07-08 18:37:15.634 +02:00 [INF] Content root path: C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManger
+2024-07-08 18:37:29.023 +02:00 [INF] File content read successfully
+2024-07-08 18:37:29.030 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 18:37:29.038 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 18:37:29.044 +02:00 [INF] 2 products parsed from file
+2024-07-08 18:37:31.380 +02:00 [INF] Inserted product: StoreManager.Domain.Product
+2024-07-08 18:37:35.314 +02:00 [INF] Inserted product: StoreManager.Domain.Product
+2024-07-08 18:41:52.076 +02:00 [INF] Now listening on: https://localhost:7086
+2024-07-08 18:41:52.100 +02:00 [INF] Now listening on: http://localhost:5226
+2024-07-08 18:41:52.103 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-08 18:41:52.106 +02:00 [INF] Hosting environment: Development
+2024-07-08 18:41:52.109 +02:00 [INF] Content root path: C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManger
+2024-07-08 18:42:05.436 +02:00 [INF] Processing file stream
+2024-07-08 18:42:05.775 +02:00 [ERR] Error parsing row 1 in Excel file
+System.FormatException: The input string '1,Example Product,1,99' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s)
+   at StoreManager.Infrastructure.ProductsRepository.ParseExcelFile(Stream fileStream) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 208
+2024-07-08 18:42:05.818 +02:00 [INF] 0 products parsed from file
+2024-07-08 18:42:59.044 +02:00 [INF] Processing file stream
+2024-07-08 18:43:00.748 +02:00 [ERR] Error parsing row 1 in Excel file
+System.FormatException: The input string '1,Example Product,1,99' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s)
+   at StoreManager.Infrastructure.ProductsRepository.ParseExcelFile(Stream fileStream) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 208
+2024-07-08 18:43:05.055 +02:00 [INF] 0 products parsed from file
+2024-07-08 18:44:19.361 +02:00 [INF] Now listening on: https://localhost:7086
+2024-07-08 18:44:19.380 +02:00 [INF] Now listening on: http://localhost:5226
+2024-07-08 18:44:19.383 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-08 18:44:19.384 +02:00 [INF] Hosting environment: Development
+2024-07-08 18:44:19.386 +02:00 [INF] Content root path: C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManger
+2024-07-08 18:44:32.190 +02:00 [INF] Processing file stream
+2024-07-08 18:44:32.196 +02:00 [INF] File content read successfully
+2024-07-08 18:44:32.205 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 18:44:32.215 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 18:44:32.221 +02:00 [INF] 2 products parsed from file
+2024-07-08 18:44:32.717 +02:00 [ERR] Error processing uploaded file
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'product_insert'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at StoreManager.Infrastructure.ProductsRepository.AddFile(Stream fileStream) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 135
+ClientConnectionId:3d766b39-afb7-4355-ad52-e9b2acdcc177
+Error Number:2812,State:62,Class:16
+2024-07-08 18:45:17.460 +02:00 [INF] Now listening on: https://localhost:7086
+2024-07-08 18:45:17.479 +02:00 [INF] Now listening on: http://localhost:5226
+2024-07-08 18:45:17.484 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-08 18:45:17.488 +02:00 [INF] Hosting environment: Development
+2024-07-08 18:45:17.497 +02:00 [INF] Content root path: C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManger
+2024-07-08 18:45:26.161 +02:00 [INF] Processing file stream
+2024-07-08 18:45:26.164 +02:00 [INF] File content read successfully
+2024-07-08 18:45:26.173 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 18:45:26.180 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 18:45:26.182 +02:00 [INF] 2 products parsed from file
+2024-07-08 18:45:26.612 +02:00 [INF] Inserted product: StoreManager.Domain.Product
+2024-07-08 18:45:26.636 +02:00 [INF] Inserted product: StoreManager.Domain.Product
+2024-07-08 18:45:43.428 +02:00 [INF] Processing file stream
+2024-07-08 18:45:43.676 +02:00 [ERR] Error parsing row 1 in Excel file
+System.FormatException: The input string '1,Example Product,1,99' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s)
+   at StoreManager.Infrastructure.ProductsRepository.ParseExcelFile(Stream fileStream) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 176
+2024-07-08 18:45:43.721 +02:00 [INF] 0 products parsed from file
+2024-07-08 18:46:42.688 +02:00 [INF] Processing file stream
+2024-07-08 18:47:49.590 +02:00 [ERR] Error parsing row 1 in Excel file
+System.FormatException: The input string '1,Example Product,1,99' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s)
+   at StoreManager.Infrastructure.ProductsRepository.ParseExcelFile(Stream fileStream) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 176
+2024-07-08 18:49:43.255 +02:00 [INF] 0 products parsed from file
+2024-07-08 18:49:59.741 +02:00 [INF] Processing file stream
+2024-07-08 18:50:16.118 +02:00 [INF] 0 products parsed from file
+2024-07-08 18:51:35.254 +02:00 [INF] Now listening on: https://localhost:7086
+2024-07-08 18:51:35.277 +02:00 [INF] Now listening on: http://localhost:5226
+2024-07-08 18:51:35.283 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-08 18:51:35.287 +02:00 [INF] Hosting environment: Development
+2024-07-08 18:51:35.291 +02:00 [INF] Content root path: C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManger
+2024-07-08 18:51:55.876 +02:00 [INF] Processing file stream
+2024-07-08 18:51:56.181 +02:00 [INF] 0 products parsed from file
+2024-07-08 22:19:00.992 +02:00 [INF] Processing file stream
+2024-07-08 22:19:00.996 +02:00 [INF] File content read successfully
+2024-07-08 22:19:01.028 +02:00 [ERR] Error parsing line 1: ID,Name,WeightedItem,SuggestedSellingPrice
+System.FormatException: Cannot parse 'ID' as int.
+   at StoreManager.Infrastructure.ProductsRepository.ParseInt(String value) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 240
+   at StoreManager.Infrastructure.ProductsRepository.ParseFileContent(String fileContent) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 215
+2024-07-08 22:19:01.084 +02:00 [ERR] Error parsing line 2: 400,TOFFEE APPLES,N,1
+System.FormatException: Cannot parse 'N' as bool.
+   at StoreManager.Infrastructure.ProductsRepository.ParseBool(String value) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 249
+   at StoreManager.Infrastructure.ProductsRepository.ParseFileContent(String fileContent) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 215
+2024-07-08 22:19:01.093 +02:00 [INF] 0 products parsed from file
+2024-07-08 22:21:32.172 +02:00 [INF] Processing file stream
+2024-07-08 22:21:32.175 +02:00 [INF] File content read successfully
+2024-07-08 22:21:32.205 +02:00 [ERR] Error parsing line 1: 401,PEAS,N,1
+System.FormatException: Cannot parse 'N' as bool.
+   at StoreManager.Infrastructure.ProductsRepository.ParseBool(String value) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 249
+   at StoreManager.Infrastructure.ProductsRepository.ParseFileContent(String fileContent) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 215
+2024-07-08 22:21:32.213 +02:00 [INF] 0 products parsed from file
+2024-07-08 22:22:18.174 +02:00 [INF] Processing file stream
+2024-07-08 22:22:18.177 +02:00 [INF] File content read successfully
+2024-07-08 22:22:18.211 +02:00 [ERR] Error parsing line 1: 401,PEAS,N,1
+System.FormatException: Cannot parse 'N' as bool.
+   at StoreManager.Infrastructure.ProductsRepository.ParseBool(String value)
+   at StoreManager.Infrastructure.ProductsRepository.ParseFileContent(String fileContent)
+2024-07-08 22:22:18.221 +02:00 [INF] 0 products parsed from file
+2024-07-08 22:22:55.434 +02:00 [INF] Processing file stream
+2024-07-08 22:22:55.437 +02:00 [INF] File content read successfully
+2024-07-08 22:22:55.474 +02:00 [ERR] Error parsing line 1: 401,PEAS,N,1
+System.FormatException: Cannot parse 'N' as bool.
+   at StoreManager.Infrastructure.ProductsRepository.ParseBool(String value)
+   at StoreManager.Infrastructure.ProductsRepository.ParseFileContent(String fileContent)
+2024-07-08 22:22:55.482 +02:00 [INF] 0 products parsed from file
+2024-07-08 22:23:08.994 +02:00 [INF] Processing file stream
+2024-07-08 22:24:53.728 +02:00 [ERR] Error processing uploaded file
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'System.String'.
+   at Microsoft.AspNetCore.Http.ReferenceReadStream.set_Position(Int64 value)
+   at StoreManager.Infrastructure.ProductsRepository.IsExcelFile(Stream fileStream)
+   at StoreManager.Infrastructure.ProductsRepository.AddFile(Stream fileStream)
+2024-07-08 22:24:53.915 +02:00 [ERR] Error uploading file
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'System.String'.
+   at Microsoft.AspNetCore.Http.ReferenceReadStream.set_Position(Int64 value)
+   at StoreManager.Infrastructure.ProductsRepository.IsExcelFile(Stream fileStream)
+   at StoreManager.Infrastructure.ProductsRepository.AddFile(Stream fileStream)
+   at StoreManager.ApplicationService.ProductsApplicationService.AddFile(Stream fileStream) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.ApplicationService\ProductsApplicationService.cs:line 66
+   at StoreManger.Controllers.ProductsController.UploadFile(IFormFile file) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManger\Controllers\ProductsController.cs:line 55
+2024-07-08 22:26:14.551 +02:00 [INF] Now listening on: https://localhost:7086
+2024-07-08 22:26:14.570 +02:00 [INF] Now listening on: http://localhost:5226
+2024-07-08 22:26:14.576 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-08 22:26:14.580 +02:00 [INF] Hosting environment: Development
+2024-07-08 22:26:14.584 +02:00 [INF] Content root path: C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManger
+2024-07-08 22:26:31.942 +02:00 [INF] File content read successfully
+2024-07-08 22:26:31.980 +02:00 [ERR] Error parsing line 1: 401,PEAS,N,1
+System.FormatException: String 'N' was not recognized as a valid Boolean.
+   at System.Boolean.Parse(String value)
+   at StoreManager.Infrastructure.ProductsRepository.ParseFileContent(String fileContent) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 156
+2024-07-08 22:26:32.019 +02:00 [INF] 0 products parsed from file
+2024-07-08 22:27:27.434 +02:00 [INF] File content read successfully
+2024-07-08 22:27:27.465 +02:00 [ERR] Error parsing line 1: 401,PEAS,N,1
+System.FormatException: String 'N' was not recognized as a valid Boolean.
+   at System.Boolean.Parse(String value)
+   at StoreManager.Infrastructure.ProductsRepository.ParseFileContent(String fileContent) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 156
+2024-07-08 22:27:27.473 +02:00 [INF] 0 products parsed from file
+2024-07-08 22:28:56.736 +02:00 [INF] File content read successfully
+2024-07-08 22:28:56.739 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 22:28:56.747 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 22:28:56.752 +02:00 [INF] 2 products parsed from file
+2024-07-08 22:29:07.457 +02:00 [INF] Inserted product: StoreManager.Domain.Product
+2024-07-08 22:29:11.220 +02:00 [INF] Inserted product: StoreManager.Domain.Product
+2024-07-08 22:29:53.758 +02:00 [INF] File content read successfully
+2024-07-08 22:29:53.770 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 22:29:53.773 +02:00 [INF] 1 products parsed from file
+2024-07-08 22:30:02.276 +02:00 [INF] Inserted product: StoreManager.Domain.Product
+2024-07-08 22:31:24.357 +02:00 [INF] File content read successfully
+2024-07-08 22:31:24.360 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 22:31:24.389 +02:00 [ERR] Error parsing line 2: 13,CHOCOLATE,NULL,NULL
+System.FormatException: String 'NULL' was not recognized as a valid Boolean.
+   at System.Boolean.Parse(String value)
+   at StoreManager.Infrastructure.ProductsRepository.ParseFileContent(String fileContent) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 156
+2024-07-08 22:31:24.398 +02:00 [INF] 1 products parsed from file
+2024-07-08 22:31:52.829 +02:00 [INF] Inserted product: StoreManager.Domain.Product
+2024-07-08 22:36:10.722 +02:00 [INF] Now listening on: https://localhost:7086
+2024-07-08 22:36:10.745 +02:00 [INF] Now listening on: http://localhost:5226
+2024-07-08 22:36:10.751 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-08 22:36:10.755 +02:00 [INF] Hosting environment: Development
+2024-07-08 22:36:10.761 +02:00 [INF] Content root path: C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManger
+2024-07-08 22:36:35.956 +02:00 [INF] File content read successfully
+2024-07-08 22:36:35.965 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 22:36:36.004 +02:00 [ERR] Error parsing line 2: 13,CHOCOLATE,NULL,NULL
+System.FormatException: String 'NULL' was not recognized as a valid Boolean.
+   at System.Boolean.Parse(String value)
+   at StoreManager.Infrastructure.ProductsRepository.ParseFileContent(String fileContent) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 156
+2024-07-08 22:36:36.045 +02:00 [INF] 1 products parsed from file
+2024-07-08 22:36:59.298 +02:00 [INF] Inserted product: StoreManager.Domain.Product
+2024-07-08 22:41:59.825 +02:00 [INF] Now listening on: https://localhost:7086
+2024-07-08 22:41:59.859 +02:00 [INF] Now listening on: http://localhost:5226
+2024-07-08 22:41:59.864 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-08 22:41:59.866 +02:00 [INF] Hosting environment: Development
+2024-07-08 22:41:59.869 +02:00 [INF] Content root path: C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManger
+2024-07-08 22:42:23.046 +02:00 [INF] File content read successfully
+2024-07-08 22:42:23.053 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 22:42:23.061 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 22:42:23.066 +02:00 [INF] 2 products parsed from file
+2024-07-08 22:42:23.179 +02:00 [INF] Inserted 2 products into the database
+2024-07-08 22:42:54.241 +02:00 [INF] File content read successfully
+2024-07-08 22:42:54.244 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 22:42:54.279 +02:00 [ERR] Error parsing line 2: 13,CHOCOLATE,NULL,NULL
+System.FormatException: String 'NULL' was not recognized as a valid Boolean.
+   at System.Boolean.Parse(String value)
+   at StoreManager.Infrastructure.ProductsRepository.ParseFileContent(String fileContent) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 178
+2024-07-08 22:42:54.316 +02:00 [INF] 1 products parsed from file
+2024-07-08 22:42:54.338 +02:00 [INF] Inserted 1 products into the database
+2024-07-08 22:47:08.806 +02:00 [INF] Now listening on: https://localhost:7086
+2024-07-08 22:47:08.830 +02:00 [INF] Now listening on: http://localhost:5226
+2024-07-08 22:47:08.835 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-08 22:47:08.838 +02:00 [INF] Hosting environment: Development
+2024-07-08 22:47:08.840 +02:00 [INF] Content root path: C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManger
+2024-07-08 22:47:32.200 +02:00 [INF] File content read successfully
+2024-07-08 22:47:32.209 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 22:47:32.248 +02:00 [ERR] Error parsing line 2: 13,CHOCOLATE,NULL,NULL
+System.FormatException: String 'NULL' was not recognized as a valid Boolean.
+   at System.Boolean.Parse(String value)
+   at StoreManager.Infrastructure.ProductsRepository.ParseFileContent(String fileContent) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 154
+2024-07-08 22:47:32.288 +02:00 [INF] 1 products parsed from file
+2024-07-08 22:48:20.837 +02:00 [INF] Inserted 1 products into the database
+2024-07-08 22:49:45.497 +02:00 [INF] Now listening on: https://localhost:7086
+2024-07-08 22:49:45.519 +02:00 [INF] Now listening on: http://localhost:5226
+2024-07-08 22:49:45.522 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-08 22:49:45.523 +02:00 [INF] Hosting environment: Development
+2024-07-08 22:49:45.525 +02:00 [INF] Content root path: C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManger
+2024-07-08 22:50:10.107 +02:00 [INF] File content read successfully
+2024-07-08 22:50:10.114 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 22:50:10.122 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 22:50:10.127 +02:00 [INF] 2 products parsed from file
+2024-07-08 22:50:15.503 +02:00 [INF] Inserted 2 products into the database
+2024-07-08 22:53:12.250 +02:00 [INF] Now listening on: https://localhost:7086
+2024-07-08 22:53:12.270 +02:00 [INF] Now listening on: http://localhost:5226
+2024-07-08 22:53:12.276 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-08 22:53:12.280 +02:00 [INF] Hosting environment: Development
+2024-07-08 22:53:12.283 +02:00 [INF] Content root path: C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManger
+2024-07-08 22:53:30.977 +02:00 [INF] File content read successfully
+2024-07-08 22:53:30.987 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 22:53:30.996 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 22:53:31.002 +02:00 [INF] 2 products parsed from file
+2024-07-08 22:53:33.331 +02:00 [INF] Inserted 2 products into the database
+2024-07-08 23:02:13.994 +02:00 [INF] File content read successfully
+2024-07-08 23:02:13.996 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 23:02:14.031 +02:00 [ERR] Error parsing line 2: 13,CHOCOLATE,,NULL
+System.FormatException: String '' was not recognized as a valid Boolean.
+   at System.Boolean.Parse(String value)
+   at StoreManager.Infrastructure.ProductsRepository.ParseFileContent(String fileContent) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\ProductsRepository.cs:line 151
+2024-07-08 23:02:14.071 +02:00 [INF] 1 products parsed from file
+2024-07-08 23:02:14.160 +02:00 [INF] Inserted 1 products into the database
+2024-07-08 23:04:40.621 +02:00 [INF] Now listening on: https://localhost:7086
+2024-07-08 23:04:40.650 +02:00 [INF] Now listening on: http://localhost:5226
+2024-07-08 23:04:40.655 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-08 23:04:40.657 +02:00 [INF] Hosting environment: Development
+2024-07-08 23:04:40.659 +02:00 [INF] Content root path: C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManger
+2024-07-08 23:05:25.829 +02:00 [INF] File content read successfully
+2024-07-08 23:05:28.903 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 23:05:28.911 +02:00 [INF] Parsed product: StoreManager.Domain.Product
+2024-07-08 23:05:30.129 +02:00 [INF] 2 products parsed from file
+2024-07-08 23:05:36.078 +02:00 [INF] Inserted 2 products into the database

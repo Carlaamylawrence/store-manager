@@ -28,8 +28,13 @@
 {#if product}
   <div class="product-container">
     <h2>{product.name}</h2>
-    <p class="product-detail"><strong>Weighted Item:</strong> {product.weightedItem ? 'Yes' : 'No'}</p>
-    <p class="product-detail"><strong>Suggested Selling Price:</strong> R{product.suggestedSellingPrice.toFixed(2)}</p>
+    {#if product.weightedItem !== null}
+      <p class="product-detail"><strong>Weighted Item:</strong> {product.weightedItem ? 'Yes' : 'No'}</p>
+    {/if}
+
+    {#if product.suggestedSellingPrice !== null}
+      <p class="product-detail"><strong>Suggested Selling Price:</strong> R{product.suggestedSellingPrice.toFixed(2)}</p>
+    {/if}
     <button on:click={handleBackToList} class="back-button">Back to Products List</button>
   </div>
 {:else}

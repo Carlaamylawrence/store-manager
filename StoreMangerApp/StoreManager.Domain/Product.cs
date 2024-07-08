@@ -4,8 +4,8 @@
   {
     public int Id { get; set; }
     public string Name { get; set; }
-    public bool WeightedItem { get; set; }
-    public decimal SuggestedSellingPrice { get; set; }
+    public bool? WeightedItem { get; set; }
+    public decimal? SuggestedSellingPrice { get; set; }
 
     public Product()
     {
