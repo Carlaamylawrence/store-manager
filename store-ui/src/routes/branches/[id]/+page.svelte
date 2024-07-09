@@ -28,8 +28,13 @@
 {#if branch}
   <div class="branch-container">
     <h2>{branch.name}</h2>
-    <p class="branch-detail"><strong>Telephone Number:</strong> {branch.telephoneNumber}</p>
-    <p class="branch-detail"><strong>Open Date:</strong> {branch.openDate}</p>
+      {#if branch.telephoneNumber !== null}
+        <p class="branch-detail"><strong>Telephone Number:</strong> {branch.telephoneNumber}</p>
+      {/if}
+
+      {#if branch.openDate !== null}
+        <p class="branch-detail"><strong>Open Date:</strong> {branch.openDate}</p>
+      {/if}
     <button on:click={handleBackToList} class="back-button">Back to Branch List</button>
   </div>
 {:else}

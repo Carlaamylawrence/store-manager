@@ -1,0 +1,137 @@
+2024-07-09 14:58:50.378 +02:00 [INF] Now listening on: https://localhost:7086
+2024-07-09 14:58:50.415 +02:00 [INF] Now listening on: http://localhost:5226
+2024-07-09 14:58:50.420 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-09 14:58:50.422 +02:00 [INF] Hosting environment: Development
+2024-07-09 14:58:50.424 +02:00 [INF] Content root path: C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManger
+2024-07-09 15:01:55.800 +02:00 [INF] File content read successfully
+2024-07-09 15:01:55.898 +02:00 [ERR] Error parsing line: 1, TESTING,1234567891,2024
+System.FormatException: String '' was not recognized as a valid DateTime.
+   at System.DateTimeParse.Parse(ReadOnlySpan`1 s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s)
+   at StoreManager.Infrastructure.BranchesRepository.ParseFileContent(String fileContent) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\BranchesRepository.cs:line 146
+2024-07-09 15:01:55.936 +02:00 [INF] 0 branches parsed from file
+2024-07-09 15:01:56.026 +02:00 [INF] Inserted 0 branches into the database
+2024-07-09 15:02:56.513 +02:00 [INF] File content read successfully
+2024-07-09 15:03:01.112 +02:00 [ERR] Error parsing line: 1, TESTING,1234567891,2024
+System.FormatException: String '' was not recognized as a valid DateTime.
+   at System.DateTimeParse.Parse(ReadOnlySpan`1 s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s)
+   at StoreManager.Infrastructure.BranchesRepository.ParseFileContent(String fileContent) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\BranchesRepository.cs:line 146
+2024-07-09 15:03:02.109 +02:00 [INF] 0 branches parsed from file
+2024-07-09 15:03:33.826 +02:00 [INF] Inserted 0 branches into the database
+2024-07-09 15:04:51.283 +02:00 [INF] File content read successfully
+2024-07-09 15:05:30.728 +02:00 [ERR] Error parsing line: 1, TESTING,1234567891,2024
+System.FormatException: String '' was not recognized as a valid DateTime.
+   at System.DateTimeParse.Parse(ReadOnlySpan`1 s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s)
+   at StoreManager.Infrastructure.BranchesRepository.ParseFileContent(String fileContent) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\BranchesRepository.cs:line 146
+2024-07-09 15:05:30.749 +02:00 [INF] 0 branches parsed from file
+2024-07-09 15:05:32.095 +02:00 [INF] Inserted 0 branches into the database
+2024-07-09 15:08:02.448 +02:00 [INF] Now listening on: https://localhost:7086
+2024-07-09 15:08:02.475 +02:00 [INF] Now listening on: http://localhost:5226
+2024-07-09 15:08:02.478 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-09 15:08:02.479 +02:00 [INF] Hosting environment: Development
+2024-07-09 15:08:02.482 +02:00 [INF] Content root path: C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManger
+2024-07-09 15:08:25.499 +02:00 [INF] File content read successfully
+2024-07-09 15:08:39.301 +02:00 [INF] Parsed branch: StoreManager.Domain.Branch
+2024-07-09 15:08:45.035 +02:00 [INF] 1 branches parsed from file
+2024-07-09 15:08:48.856 +02:00 [INF] Inserted 1 branches into the database
+2024-07-09 15:09:42.965 +02:00 [INF] File content read successfully
+2024-07-09 15:09:48.903 +02:00 [INF] Parsed branch: StoreManager.Domain.Branch
+2024-07-09 15:09:54.857 +02:00 [INF] 1 branches parsed from file
+2024-07-09 15:09:57.229 +02:00 [INF] Inserted 1 branches into the database
+2024-07-09 15:10:21.326 +02:00 [INF] File content read successfully
+2024-07-09 15:10:47.271 +02:00 [INF] Parsed branch: StoreManager.Domain.Branch
+2024-07-09 15:10:56.005 +02:00 [INF] Parsed branch: StoreManager.Domain.Branch
+2024-07-09 15:10:59.473 +02:00 [INF] 2 branches parsed from file
+2024-07-09 15:11:02.174 +02:00 [ERR] Error processing uploaded file
+System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__Branch__3214EC071394F3B1'. Cannot insert duplicate key in object 'dbo.Branch'. The duplicate key value is (1).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at StoreManager.Infrastructure.BranchesRepository.AddFile(Stream fileStream) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\BranchesRepository.cs:line 116
+ClientConnectionId:c5b2fa3d-05a6-42cd-b5cb-4074d9a50cbc
+Error Number:2627,State:1,Class:14
+2024-07-09 15:11:02.301 +02:00 [ERR] Error uploading file
+System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__Branch__3214EC071394F3B1'. Cannot insert duplicate key in object 'dbo.Branch'. The duplicate key value is (1).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at StoreManager.Infrastructure.BranchesRepository.AddFile(Stream fileStream) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\BranchesRepository.cs:line 116
+   at StoreManager.ApplicationService.BranchesApplicationService.AddFile(Stream fileStream) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.ApplicationService\BranchesApplicationService.cs:line 63
+   at StoreManger.Controllers.BranchesController.UploadFile(IFormFile file) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManger\Controllers\BranchesController.cs:line 78
+ClientConnectionId:c5b2fa3d-05a6-42cd-b5cb-4074d9a50cbc
+Error Number:2627,State:1,Class:14
+2024-07-09 15:12:09.803 +02:00 [INF] File content read successfully
+2024-07-09 15:12:13.037 +02:00 [INF] Parsed branch: StoreManager.Domain.Branch
+2024-07-09 15:12:41.860 +02:00 [INF] Parsed branch: StoreManager.Domain.Branch
+2024-07-09 15:13:12.808 +02:00 [INF] 2 branches parsed from file
+2024-07-09 15:15:01.853 +02:00 [ERR] Error processing uploaded file
+System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__Branch__3214EC071394F3B1'. Cannot insert duplicate key in object 'dbo.Branch'. The duplicate key value is (1).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at StoreManager.Infrastructure.BranchesRepository.AddFile(Stream fileStream) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\BranchesRepository.cs:line 116
+ClientConnectionId:c5b2fa3d-05a6-42cd-b5cb-4074d9a50cbc
+Error Number:2627,State:1,Class:14
+2024-07-09 15:15:01.949 +02:00 [ERR] Error uploading file
+System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK__Branch__3214EC071394F3B1'. Cannot insert duplicate key in object 'dbo.Branch'. The duplicate key value is (1).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at StoreManager.Infrastructure.BranchesRepository.AddFile(Stream fileStream) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Infrastructure\BranchesRepository.cs:line 116
+   at StoreManager.ApplicationService.BranchesApplicationService.AddFile(Stream fileStream) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.ApplicationService\BranchesApplicationService.cs:line 63
+   at StoreManger.Controllers.BranchesController.UploadFile(IFormFile file) in C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManger\Controllers\BranchesController.cs:line 78
+ClientConnectionId:c5b2fa3d-05a6-42cd-b5cb-4074d9a50cbc
+Error Number:2627,State:1,Class:14
+2024-07-09 15:15:20.184 +02:00 [INF] File content read successfully
+2024-07-09 15:15:21.486 +02:00 [INF] Parsed branch: StoreManager.Domain.Branch
+2024-07-09 15:15:22.175 +02:00 [INF] Parsed branch: StoreManager.Domain.Branch
+2024-07-09 15:15:22.177 +02:00 [INF] 2 branches parsed from file
+2024-07-09 15:15:22.896 +02:00 [INF] Inserted 2 branches into the database
+2024-07-09 15:19:40.274 +02:00 [INF] Now listening on: https://localhost:7086
+2024-07-09 15:19:40.307 +02:00 [INF] Now listening on: http://localhost:5226
+2024-07-09 15:19:40.313 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-09 15:19:40.315 +02:00 [INF] Hosting environment: Development
+2024-07-09 15:19:40.316 +02:00 [INF] Content root path: C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManger
+2024-07-09 15:22:58.053 +02:00 [INF] File content read successfully
+2024-07-09 15:22:58.921 +02:00 [INF] Parsed branch: StoreManager.Domain.Branch
+2024-07-09 15:22:59.327 +02:00 [INF] Parsed branch: StoreManager.Domain.Branch
+2024-07-09 15:22:59.330 +02:00 [INF] 2 branches parsed from file
+2024-07-09 15:23:00.287 +02:00 [INF] Inserted 2 branches into the database

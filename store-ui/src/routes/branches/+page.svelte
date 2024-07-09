@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { fetchBranches, addBranch, updateBranch, deleteBranch } from '$lib/repos/branchRepo';
+  import { fetchBranches, addBranch, updateBranch, deleteBranch, uploadBranches } from '$lib/repos/branchRepo';
   import type { Branch } from '$lib/models/Branch';
   import Nav from '../../components/navbar/nav.svelte';
   import { goto } from '$app/navigation';
@@ -12,6 +12,7 @@
   let isEditing = false;
   let branchInModal: Partial<Branch> = {};
   let error: string = '';
+  let selectedFile: File | null = null;
 
   onMount(async () => {
     try {
@@ -110,6 +111,34 @@
     XLSX.utils.book_append_sheet(wb, ws, 'Branches');
     XLSX.writeFile(wb, 'Branches.xlsx');
   }
+
+  function handleFileChange(event: Event) {
+    const input = event.target as HTMLInputElement;
+    if (input.files && input.files.length > 0) {
+      selectedFile = input.files[0];
+    } else {
+      selectedFile = null;
+    }
+  }
+
+  async function handleFileUpload() {
+    if (!selectedFile) {
+      showError('Please select a file to upload.');
+      return;
+    }
+
+    try {
+      const formData = new FormData();
+      formData.append('file', selectedFile);
+
+      await uploadBranches(formData);
+      branches = await fetchBranches();
+      selectedFile = null;
+    } catch (error) {
+      console.error('Failed to upload file:', error);
+      showError('Failed to upload file. Please try again.');
+    }
+  }
 </script>
 <Nav/>
 
@@ -117,6 +146,10 @@
   <h1 class="page-title">Branches</h1>
   <button on:click={openAddModal} class="add">Add New Branch</button>
   <button on:click={downloadToExcel} class="download">Download to Excel</button>
+  <div class="import">
+		<input type="file" class="import-input" on:change={handleFileChange} />
+		<button on:click={handleFileUpload}>Upload File</button>
+  </div>
 </div>
 
 {#if error}
@@ -187,6 +220,19 @@
     font-size:60px;
     color: #00723F;
   }
+  .import{
+		background-color: #478a6c2f;
+		border-radius: 15px;
+	}
+
+	.import-input{
+		margin-left: 5px;
+    padding: 10px;
+    font-family: "Albert Sans", Sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5em;
+	}
 
 ul {
 		list-style-type: none;

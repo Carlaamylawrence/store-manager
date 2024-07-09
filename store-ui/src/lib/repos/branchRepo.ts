@@ -55,3 +55,26 @@ export async function deleteBranch(id: number): Promise<void> {
     throw new Error(`Failed to delete branch`);
   }
 }
+
+export async function uploadBranches(formData: FormData): Promise<void> {
+  try {
+    const response = await fetch(`${API_BASE_URL}/branches/upload`, {
+      method: 'POST',
+      body: formData,
+    });
+
+    if (!response.ok) {
+      throw new Error('Failed to upload file');
+    }
+
+    const responseBody = await response.text();
+    if (responseBody) {
+      console.log('File uploaded successfully', JSON.parse(responseBody));
+    } else {
+      console.log('File uploaded successfully with no response body');
+    }
+  } catch (error) {
+    console.error('Error uploading file', error);
+    throw error;
+  }
+}

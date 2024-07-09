@@ -11,8 +11,8 @@ namespace StoreManager.Domain
   {
     public int Id { get; set; }
     public string Name { get; set; }
-    public string TelephoneNumber { get; set; }
-    public DateTime OpenDate { get; set; }
+    public string? TelephoneNumber { get; set; }
+    public DateTime? OpenDate { get; set; }
 
     public (bool isValid, List<string> messages) BranchIsValid()
     {

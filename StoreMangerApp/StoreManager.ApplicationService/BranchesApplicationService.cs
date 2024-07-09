@@ -57,5 +57,10 @@ namespace StoreManager.ApplicationService
       }
       return false;
     }
+
+    public async Task<bool> AddFile(Stream fileStream)
+    {
+      return await _branchesRepository.AddFile(fileStream);
+    }
   }
 }

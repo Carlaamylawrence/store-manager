@@ -7,6 +7,7 @@ namespace StoreManager.Infrastructure
     Task<IEnumerable<Branch>> List();
     Task<Branch> FindById(int id);
     Task<int> Add(Branch branch);
+    Task<bool> AddFile(Stream fileStream);
     Task Edit(Branch updatedBranch);
     Task Delete(Branch branch);
   }
