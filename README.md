@@ -5,7 +5,7 @@ Welcome to my Store Manager
 This app uses svelte so please make sure you install and the relevant node packages
 
 To begin
-1. Execute the queries in the SQL folder called Table Creates
+1. Execute the queries in the SQL folder called Table Creates in this order (1. Branch, 2. Product, 3.BranchProduct, 4.ProductType 5.BranchType)
 2. Execute the following
 
 -- Inserting values into the branch table
@@ -141,4 +141,7 @@ VALUES
 (1009, 54874),
 (1009, 58837);
 
-3. Execute all the fiels in the Stored Procedures folder
+3. Execute all the files in the Stored Procedures folder
+
+Make sure all procs are executed. 
+Currently the app can only handle csv upload data
