@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManager.ApplicationService\\StoreManager.ApplicationService.csproj": {}
+    "C:\\repo\\store-manager\\StoreMangerApp\\StoreManager.ApplicationService\\StoreManager.ApplicationService.csproj": {}
   },
   "projects": {
-    "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManager.ApplicationService\\StoreManager.ApplicationService.csproj": {
+    "C:\\repo\\store-manager\\StoreMangerApp\\StoreManager.ApplicationService\\StoreManager.ApplicationService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManager.ApplicationService\\StoreManager.ApplicationService.csproj",
+        "projectUniqueName": "C:\\repo\\store-manager\\StoreMangerApp\\StoreManager.ApplicationService\\StoreManager.ApplicationService.csproj",
         "projectName": "StoreManager.ApplicationService",
-        "projectPath": "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManager.ApplicationService\\StoreManager.ApplicationService.csproj",
+        "projectPath": "C:\\repo\\store-manager\\StoreMangerApp\\StoreManager.ApplicationService\\StoreManager.ApplicationService.csproj",
         "packagesPath": "C:\\Users\\Carla Lawrence\\.nuget\\packages\\",
-        "outputPath": "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManager.ApplicationService\\obj\\",
+        "outputPath": "C:\\repo\\store-manager\\StoreMangerApp\\StoreManager.ApplicationService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Carla Lawrence\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj": {
-                "projectPath": "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj"
+              "C:\\repo\\store-manager\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj": {
+                "projectPath": "C:\\repo\\store-manager\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj"
               },
-              "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManager.Infrastructure\\StoreManager.Infrastructure.csproj": {
-                "projectPath": "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManager.Infrastructure\\StoreManager.Infrastructure.csproj"
+              "C:\\repo\\store-manager\\StoreMangerApp\\StoreManager.Infrastructure\\StoreManager.Infrastructure.csproj": {
+                "projectPath": "C:\\repo\\store-manager\\StoreMangerApp\\StoreManager.Infrastructure\\StoreManager.Infrastructure.csproj"
               }
             }
           }
@@ -84,14 +84,14 @@
         }
       }
     },
-    "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj": {
+    "C:\\repo\\store-manager\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj",
+        "projectUniqueName": "C:\\repo\\store-manager\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj",
         "projectName": "StoreManager.Domain",
-        "projectPath": "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj",
+        "projectPath": "C:\\repo\\store-manager\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj",
         "packagesPath": "C:\\Users\\Carla Lawrence\\.nuget\\packages\\",
-        "outputPath": "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManager.Domain\\obj\\",
+        "outputPath": "C:\\repo\\store-manager\\StoreMangerApp\\StoreManager.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Carla Lawrence\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -157,14 +157,14 @@
         }
       }
     },
-    "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManager.Infrastructure\\StoreManager.Infrastructure.csproj": {
+    "C:\\repo\\store-manager\\StoreMangerApp\\StoreManager.Infrastructure\\StoreManager.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManager.Infrastructure\\StoreManager.Infrastructure.csproj",
+        "projectUniqueName": "C:\\repo\\store-manager\\StoreMangerApp\\StoreManager.Infrastructure\\StoreManager.Infrastructure.csproj",
         "projectName": "StoreManager.Infrastructure",
-        "projectPath": "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManager.Infrastructure\\StoreManager.Infrastructure.csproj",
+        "projectPath": "C:\\repo\\store-manager\\StoreMangerApp\\StoreManager.Infrastructure\\StoreManager.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Carla Lawrence\\.nuget\\packages\\",
-        "outputPath": "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManager.Infrastructure\\obj\\",
+        "outputPath": "C:\\repo\\store-manager\\StoreMangerApp\\StoreManager.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Carla Lawrence\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -181,8 +181,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj": {
-                "projectPath": "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj"
+              "C:\\repo\\store-manager\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj": {
+                "projectPath": "C:\\repo\\store-manager\\StoreMangerApp\\StoreManager.Domain\\StoreManager.Domain.csproj"
               }
             }
           }

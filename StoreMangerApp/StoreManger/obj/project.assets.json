@@ -2232,11 +2232,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManger\\StoreManger.csproj",
+      "projectUniqueName": "C:\\repo\\store-manager\\StoreMangerApp\\StoreManger\\StoreManger.csproj",
       "projectName": "StoreManger",
-      "projectPath": "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManger\\StoreManger.csproj",
+      "projectPath": "C:\\repo\\store-manager\\StoreMangerApp\\StoreManger\\StoreManger.csproj",
       "packagesPath": "C:\\Users\\Carla Lawrence\\.nuget\\packages\\",
-      "outputPath": "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManger\\obj\\",
+      "outputPath": "C:\\repo\\store-manager\\StoreMangerApp\\StoreManger\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Carla Lawrence\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2253,8 +2253,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManager.ApplicationService\\StoreManager.ApplicationService.csproj": {
-              "projectPath": "C:\\repo\\foodlovers\\store-manager\\StoreMangerApp\\StoreManager.ApplicationService\\StoreManager.ApplicationService.csproj"
+            "C:\\repo\\store-manager\\StoreMangerApp\\StoreManager.ApplicationService\\StoreManager.ApplicationService.csproj": {
+              "projectPath": "C:\\repo\\store-manager\\StoreMangerApp\\StoreManager.ApplicationService\\StoreManager.ApplicationService.csproj"
             }
           }
         }

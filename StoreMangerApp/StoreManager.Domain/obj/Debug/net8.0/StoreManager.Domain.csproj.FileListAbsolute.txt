@@ -35,3 +35,16 @@ C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Domain\obj\Debug\ne
 C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\refint\StoreManager.Domain.dll
 C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\StoreManager.Domain.pdb
 C:\repo\foodlovers\store-manager\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\ref\StoreManager.Domain.dll
+C:\repo\store-manager\StoreMangerApp\StoreManager.Domain\bin\Debug\net8.0\StoreManager.Domain.deps.json
+C:\repo\store-manager\StoreMangerApp\StoreManager.Domain\bin\Debug\net8.0\StoreManager.Domain.dll
+C:\repo\store-manager\StoreMangerApp\StoreManager.Domain\bin\Debug\net8.0\StoreManager.Domain.pdb
+C:\repo\store-manager\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\StoreManager.Domain.csproj.AssemblyReference.cache
+C:\repo\store-manager\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\StoreManager.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\repo\store-manager\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\StoreManager.Domain.AssemblyInfoInputs.cache
+C:\repo\store-manager\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\StoreManager.Domain.AssemblyInfo.cs
+C:\repo\store-manager\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\StoreManager.Domain.csproj.CoreCompileInputs.cache
+C:\repo\store-manager\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\StoreManager.Domain.sourcelink.json
+C:\repo\store-manager\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\StoreManager.Domain.dll
+C:\repo\store-manager\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\refint\StoreManager.Domain.dll
+C:\repo\store-manager\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\StoreManager.Domain.pdb
+C:\repo\store-manager\StoreMangerApp\StoreManager.Domain\obj\Debug\net8.0\ref\StoreManager.Domain.dll

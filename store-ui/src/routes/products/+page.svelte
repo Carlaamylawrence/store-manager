@@ -66,6 +66,7 @@
             });
             if (addedProduct) {
                 products = [...products, addedProduct];
+								window.location.reload();
                 closeModal();
             }
         } catch (error) {

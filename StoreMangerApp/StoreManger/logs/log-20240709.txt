@@ -135,3 +135,8 @@ Error Number:2627,State:1,Class:14
 2024-07-09 15:22:59.327 +02:00 [INF] Parsed branch: StoreManager.Domain.Branch
 2024-07-09 15:22:59.330 +02:00 [INF] 2 branches parsed from file
 2024-07-09 15:23:00.287 +02:00 [INF] Inserted 2 branches into the database
+2024-07-09 15:35:10.236 +02:00 [INF] Now listening on: https://localhost:7086
+2024-07-09 15:35:10.268 +02:00 [INF] Now listening on: http://localhost:5226
+2024-07-09 15:35:10.273 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-09 15:35:10.275 +02:00 [INF] Hosting environment: Development
+2024-07-09 15:35:10.278 +02:00 [INF] Content root path: C:\repo\store-manager\StoreMangerApp\StoreManger

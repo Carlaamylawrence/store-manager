@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StoreManger")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17df231c206bf6fa182948dda32ba5260bb11735")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5044f48872c84174285c8f006a4c09a7308e0198")]
 [assembly: System.Reflection.AssemblyProductAttribute("StoreManger")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StoreManger")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

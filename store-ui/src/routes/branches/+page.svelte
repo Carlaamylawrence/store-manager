@@ -67,6 +67,7 @@
         });
         if (addedBranch) {
         branches = [...branches, addedBranch];
+        window.location.reload();
         closeModal();
 			}
     }
